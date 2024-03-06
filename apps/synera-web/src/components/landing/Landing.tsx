@@ -1,6 +1,5 @@
 "use client"
 
-import LinesBackground from "@/components/ui/LinesBackground"
 import React from "react"
 import { Spotlight } from "@/components/ui/Spotlight"
 import Button from "@/components/ui/Button"
@@ -11,12 +10,17 @@ import {
 } from "@tabler/icons-react"
 import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
+import Background from "../ui/Backgrounds"
 
 const Landing = () => {
   const router = useRouter()
   return (
     <main className="w-full h-screen">
-      <LinesBackground className="w-full h-full flex items-center justify-center bg-box-gradient">
+      <Background
+        bg_types="lines"
+        animated
+        className="w-full h-full flex items-center justify-center bg-box-gradient"
+      >
         <section className="h-screen w-full antialiased flex items-center justify-center">
           <Spotlight
             className="-top-40 left-0 md:left-60 md:-top-20"
@@ -40,7 +44,7 @@ const Landing = () => {
                 <IconChartBar size={25} className="text-primary" />
               </small>
             </div>
-            <h1 className="text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+            <h1 className="h-[155px] text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
               Make your dreams come <br />
               true through a website
             </h1>
@@ -77,7 +81,7 @@ const Landing = () => {
             </div>
           </motion.div>
         </section>
-      </LinesBackground>
+      </Background>
     </main>
   )
 }

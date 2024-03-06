@@ -1,9 +1,15 @@
 import type { Metadata } from "next"
-import { Rubik } from "next/font/google"
+import { Rubik, Work_Sans } from "next/font/google"
+import Exensa from "next/font/local"
 import "./globals.css"
 import Navbar from "@/components/navbar/Navbar"
 
 const rubik = Rubik({ subsets: ["latin"] })
+const workSans = Work_Sans({ subsets: ["latin"] })
+const exensa = Exensa({
+  src: "../font/ExensaGrotesk-Regular.ttf",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   title: "Synera",
@@ -18,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={rubik.className}>
+      <body className={workSans.className}>
         <Navbar />
         {children}
       </body>

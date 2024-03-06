@@ -23,6 +23,9 @@ importers:
 
   apps/synera-web:
     dependencies:
+      '@remixicon/react':
+        specifier: ^4.2.0
+        version: 4.2.0(react@18.2.0)
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -44,6 +47,9 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.2.0(react@18.2.0)
+      simplex-noise:
+        specifier: ^4.0.1
+        version: 4.0.1
       tailwind-merge:
         specifier: ^2.2.1
         version: 2.2.1
@@ -657,6 +663,14 @@ packages:
       picocolors: 1.0.0
       tslib: 2.6.2
     dev: true
+
+  /@remixicon/react@4.2.0(react@18.2.0):
+    resolution: {integrity: sha512-eGhKpZ88OU0qkcY9pJu6khBmItDV82nU130E6C68yc+FbljueHlUYy/4CrJsmf860RIDMay2Rpzl27OSJ81miw==}
+    peerDependencies:
+      react: '>=18.2.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@rushstack/eslint-patch@1.5.1:
     resolution: {integrity: sha512-6i/8UoL0P5y4leBIGzvkZdS85RDMG9y1ihZzmTZQ5LdHUYmZ7pKFoj8X0236s3lusPs1Fa5HTQUpwI+UfTcmeA==}
@@ -4520,6 +4534,10 @@ packages:
   /signal-exit@4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
+
+  /simplex-noise@4.0.1:
+    resolution: {integrity: sha512-zl/+bdSqW7HJOQ0oDbxrNYaF4F5ik0i7M6YOYmEoIJNtg16NpvWaTTM1Y7oV/7T0jFljawLgYPS81Uu2rsfo1A==}
+    dev: false
 
   /slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}

@@ -3,11 +3,7 @@
 import React from "react"
 import { Spotlight } from "@/components/ui/Spotlight"
 import Button from "@/components/ui/Button"
-import {
-  IconCalendarPlus,
-  IconBrandLinkedin,
-  IconChartBar,
-} from "@tabler/icons-react"
+import { IconCalendarPlus } from "@tabler/icons-react"
 import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 import Background from "../ui/Backgrounds"

@@ -9,7 +9,7 @@ const Jobs = () => {
     {
       title: "Génesis",
       description:
-        "Sitio del Consultorio Genesis, landing page basica con acceso a las distintas ramas y distintos profesionales.",
+        "Genesis Clinic website, a basic landing page with access to various branches and different professionals.",
       image: "/images/Genesis.svg",
       link: "https://www.consultoriogenesis.com/",
       items: ["Website", "UX/UI"],
@@ -17,7 +17,7 @@ const Jobs = () => {
     {
       title: "Pillwise app",
       description:
-        "App ofifficial de PillWise, recordatorio para personas mayores de tomar sus medicamentos y llevar un control de los mismos.",
+        "The official PillWise app, a reminder for seniors to take their medications and keep track of them.",
       image: "/images/Pillwise.svg",
       link: "",
       items: ["Web/App", "UX/UI", "Frontend"],
@@ -25,7 +25,7 @@ const Jobs = () => {
     {
       title: "Portfolio web",
       description:
-        "Portfolio personal de Valentín Gonzalez, con acceso a distintos proyectos y distintas tecnologías.",
+        "Valentín Gonzalez's personal portfolio, showcasing various projects and technologies.",
       image: "/images/TintaPortfolio.svg",
       link: "https://valentin-portfolio.vercel.app/",
       items: ["Website", "UX/UI", "Frontend"],

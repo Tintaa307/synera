@@ -126,33 +126,7 @@ const Col = ({
         },
         className
       )}
-    >
-      <motion.span
-        initial={animated ? { height: "0%", opacity: 0 } : {}} // Estado inicial: 0%
-        animate={
-          animated
-            ? {
-                height: lines ? ["0%", "40%"] : ["0%", "20%"],
-                opacity: [1, 0],
-              }
-            : {}
-        }
-        transition={{
-          duration: 3,
-          delay: 2,
-          type: "tween",
-          repeat: Infinity,
-          repeatDelay: 4,
-          ease: "easeInOut",
-          times: [0, 1],
-        }}
-        className={cn({
-          "w-full bg-line-gradient mt-[75px] rounded-full": index === 7,
-          "w-full bg-line-gradient mt-[75px]":
-            (lines && index === 16) || index === 24,
-        })}
-      />
-    </motion.span>
+    />
   )
 }
 

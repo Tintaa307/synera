@@ -39,6 +39,7 @@ const config: Config = {
           "radial-gradient(circle 350px at 50% 60%, #84E9FF 0%, transparent 100%)",
         "circle-gradient-small":
           "radial-gradient(circle 200px at 50% 56%, #84E9FF 0%, transparent 100%)",
+        "card-gradient": "linear-gradient(to left top,#040404 60%,#111111);",
       },
       boxShadow: {
         gradient:

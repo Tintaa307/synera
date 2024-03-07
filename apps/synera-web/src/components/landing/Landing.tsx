@@ -4,7 +4,7 @@ import React from "react"
 import { Spotlight } from "@/components/ui/Spotlight"
 import Button from "@/components/ui/Button"
 import {
-  IconPhoneCall,
+  IconCalendarPlus,
   IconBrandLinkedin,
   IconChartBar,
 } from "@tabler/icons-react"
@@ -32,18 +32,6 @@ const Landing = () => {
             transition={{ duration: 0.8, delay: 1.5 }}
             className="w-5/6 h-max flex flex-col gap-6 items-center justify-center text-center"
           >
-            <div
-              className={[
-                "w-max h-max px-8 py-3 rounded-2xl bg-[#070707] border-[1px] border-white/20 my-4 ",
-                "gradient-shadow",
-                "shadow-secondary-foreground/20",
-              ].join(" ")}
-            >
-              <small className="text-white text-base font-medium flex flex-row gap-2 items-center select-none">
-                Digital Agency{" "}
-                <IconChartBar size={25} className="text-primary" />
-              </small>
-            </div>
             <h1 className="h-[155px] text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
               Make your dreams come <br />
               true through a website
@@ -59,23 +47,10 @@ const Landing = () => {
                 className="text-base font-normal h-14 group"
               >
                 Book a call{" "}
-                <IconPhoneCall
+                <IconCalendarPlus
                   size={20}
-                  className="text-primary group-hover:animate-wiggle  transition-colors duration-200"
-                />{" "}
-              </Button>
-              <Button
-                action={() =>
-                  router.push(
-                    "https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Aorganization%3A101669482&keywords=Synera&origin=ENTITY_SEARCH_HOME_HISTORY&sid=Mua"
-                  )
-                }
-                className="w-max px-4 text-base font-normal h-14 group"
-              >
-                Our linkedin
-                <IconBrandLinkedin
-                  size={22}
-                  className="text-primary group-hover:animate-wiggle  transition-colors duration-200"
+                  strokeWidth={1.5}
+                  className="text-white group-hover:animate-wiggle  transition-colors duration-200"
                 />{" "}
               </Button>
             </div>

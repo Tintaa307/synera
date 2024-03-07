@@ -26,4 +26,5 @@
 
 body {
   background: #000;
+  @apply selection:text-primary selection:bg-primary/20;
 }

@@ -15,7 +15,7 @@ import Background from "../ui/Backgrounds"
 const Landing = () => {
   const router = useRouter()
   return (
-    <main className="w-full h-screen">
+    <main id="Home" className="w-full h-screen">
       <Background
         bg_types="lines"
         animated

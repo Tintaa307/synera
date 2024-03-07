@@ -50,7 +50,10 @@ const About = () => {
   ]
 
   return (
-    <section className="w-full h-full flex items-center justify-center mt-24">
+    <section
+      id="About"
+      className="w-full h-full flex items-center justify-center mt-24"
+    >
       <div className="w-[90%] h-max flex items-center justify-center flex-col gap-4">
         <Title
           title="About"

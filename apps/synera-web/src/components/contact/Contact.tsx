@@ -50,7 +50,10 @@ const Contact = () => {
   }
 
   return (
-    <section className="w-full h-full flex items-center justify-center mt-24">
+    <section
+      id="Contact"
+      className="w-full h-full flex items-center justify-center mt-24"
+    >
       <Toaster position="top-center" duration={3000} richColors />
       <div className="w-[90%] h-max flex items-center justify-center flex-col gap-10">
         <Title

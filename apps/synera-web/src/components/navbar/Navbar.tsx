@@ -5,23 +5,23 @@ const Navbar = () => {
   const arrItems = [
     {
       title: "Home",
-      link: "#home",
+      link: "#Home",
     },
     {
       title: "Services",
-      link: "#services",
+      link: "#Services",
     },
     {
       title: "Last Jobs",
-      link: "#last-jobs",
+      link: "#Jobs",
     },
     {
       title: "About us",
-      link: "#about",
+      link: "#About",
     },
     {
       title: "Contact",
-      link: "#contact",
+      link: "#Contact",
     },
   ]
   return (

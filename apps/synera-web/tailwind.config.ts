@@ -27,6 +27,8 @@ const config: Config = {
         "box-gradient": "linear-gradient(to bottom,transparent 10%,#000);",
         "circle-gradient":
           "radial-gradient(circle 350px at 50% 56%, #84E9FF 0%, transparent 100%)",
+        "circle-gradient-small":
+          "radial-gradient(circle 200px at 50% 56%, #84E9FF 0%, transparent 100%)",
       },
       boxShadow: {
         gradient:

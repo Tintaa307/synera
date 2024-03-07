@@ -1,8 +1,8 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from "react"
+import React from "react"
 import Card from "./Card"
-import { motion, useInView } from "framer-motion"
+import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import Title from "../ui/Title"
 
@@ -48,6 +48,7 @@ const Services = () => {
 
   return (
     <section
+      id="Services"
       className={cn(
         "w-full min-h-screen flex justify-center items-center gap-10 mt-24 flex-col"
       )}
@@ -66,8 +67,6 @@ const Services = () => {
         className="text-5xl font-semibold text-white text-center my-12"
       />
       <div className="w-[90%] flex justify-center items-center gap-5 md:mt-10 flex-wrap relative">
-        <span className="absolute bg-blue w-[300px] h-[300px] rounded-full blur-sm gradient-card md:bottom-[20%] md:right-[5%] xxl:top-[40%] xxl:right-[15%] bottom-[10%] right-[15%]"></span>
-        <span className="absolute bg-blue w-[300px] h-[300px] rounded-full blur-sm gradient-card md:top-[20%] md:left-[5%] xxl:left-[20%] top-[25%] left-[15%]"></span>
         {ServicesArr.map((service, index) => (
           <Card
             key={index}

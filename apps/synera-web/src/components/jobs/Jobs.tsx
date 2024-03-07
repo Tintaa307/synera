@@ -33,7 +33,10 @@ const Jobs = () => {
   ]
 
   return (
-    <section className="w-full h-max flex justify-center items-start mt-44">
+    <section
+      id="Jobs"
+      className="w-full h-max flex justify-center items-start mt-44"
+    >
       <div className="w-[90%] h-full flex justify-center items-center flex-col gap-20">
         <Title
           title="jobs"

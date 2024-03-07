@@ -53,7 +53,7 @@ const Landing = () => {
               scaling of your projects. Additionally, we specialize in fostering
               strong client relationships.
             </p>
-            <div className="flex flex-row w-full items-center justify-center h-max gap-4">
+            <div className="flex flex-row w-full items-center justify-center h-max gap-12">
               <Button
                 action={() => router.push("https://calendly.com/synera-app")}
                 className="text-base font-normal h-14 group"
@@ -72,7 +72,7 @@ const Landing = () => {
                 }
                 className="w-max px-4 text-base font-normal h-14 group"
               >
-                Visit our linkedin
+                Our linkedin
                 <IconBrandLinkedin
                   size={22}
                   className="text-primary group-hover:animate-wiggle  transition-colors duration-200"

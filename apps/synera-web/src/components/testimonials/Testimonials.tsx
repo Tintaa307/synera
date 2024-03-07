@@ -13,7 +13,7 @@ export function Testimonials() {
     >
       <Title
         title="testimonials"
-        highlight="Real"
+        highlight="Some"
         className="text-5xl font-semibold text-white text-center my-12"
       />
       <InfiniteMovingCards

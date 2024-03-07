@@ -2,6 +2,10 @@
 
 import { cn } from "@/lib/utils"
 import React, { useEffect, useState } from "react"
+import { IconStarFilled, IconQuote } from "@tabler/icons-react"
+import Image from "next/image"
+import { Quot } from "./Quot"
+import Background from "./Backgrounds"
 
 export const InfiniteMovingCards = ({
   items,
@@ -73,7 +77,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -87,35 +91,64 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
-            style={{
-              background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-            }}
+            className="w-[450px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 px-8 py-6 md:w-[450px] bg-white flex flex-col gap-6 mt-[52px]"
             key={item.name}
           >
+            <picture className="w-full h-max flex items-center justify-center">
+              <div className="absolute w-48 h-20 -top-[80px]">
+                <Image
+                  src={"/images/dots.svg"}
+                  alt="dots"
+                  width={192}
+                  height={80}
+                  className="w-full h-full"
+                />
+              </div>
+
+              <Image
+                src={"/images/logo-synera-xs.svg"}
+                alt="synera-logo"
+                width={84}
+                height={84}
+                className="rounded-full absolute -top-10"
+              />
+            </picture>
+            <div className="w-full h-max flex items-center justify-center flex-row mt-8">
+              <IconStarFilled size={15} className="text-[#FF5201]" />
+              <IconStarFilled size={15} className="text-[#FF5201]" />
+              <IconStarFilled size={15} className="text-[#FF5201]" />
+              <IconStarFilled size={15} className="text-[#FF5201]" />
+              <IconStarFilled size={15} className="text-[#FF5201]" />
+            </div>
             <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+              <span className=" relative z-20 text-xs leading-[1.4] text-black font-normal">
                 {item.quote}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.name}
-                  </span>
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.title}
-                  </span>
-                </span>
-              </div>
             </blockquote>
+            <span className="relative w-full h-[1px] bg-black/40">
+              <div className="absolute left-0 bg-primary py-1 px-1">
+                <Quot />
+              </div>
+            </span>
+            <div className="w-full h-max flex items-center justify-center">
+              <small className="text-black/90 text-sm">{item.name}</small>
+            </div>
           </li>
         ))}
       </ul>
     </div>
   )
+}
+
+{
+  /* <div className="relative z-20 mt-6 flex flex-row items-center">
+<span className="flex flex-col gap-1">
+  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+    {item.name}
+  </span>
+  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+    {item.title}
+  </span>
+</span>
+</div> */
 }

@@ -28,3 +28,16 @@ body {
   background: #000;
   @apply selection:text-primary selection:bg-primary/20;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  background-color: #040404;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #070707;
+  border-radius: 5rem;
+}

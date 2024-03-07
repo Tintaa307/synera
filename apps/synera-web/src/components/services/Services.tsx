@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react"
 import Card from "./Card"
 import { motion, useInView } from "framer-motion"
 import { cn } from "@/lib/utils"
+import Title from "../ui/Title"
 
 const Services = () => {
   const ServicesArr = [
@@ -58,15 +59,12 @@ const Services = () => {
         viewport={{ once: true }}
         className="absolute w-full h-full rounded-full bg-circle-gradient"
       />
-      <motion.h2
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
-        className="md:text-5xl text-4xl font-semibold text-white text-center"
-      >
-        Our <span className="text-primary">services</span>
-      </motion.h2>
+      <Title
+        title="Our"
+        highlight="services"
+        order="first"
+        className="text-5xl font-semibold text-white text-center my-12"
+      />
       <div className="w-[90%] flex justify-center items-center gap-5 md:mt-10 flex-wrap relative">
         <span className="absolute bg-blue w-[300px] h-[300px] rounded-full blur-sm gradient-card md:bottom-[20%] md:right-[5%] xxl:top-[40%] xxl:right-[15%] bottom-[10%] right-[15%]"></span>
         <span className="absolute bg-blue w-[300px] h-[300px] rounded-full blur-sm gradient-card md:top-[20%] md:left-[5%] xxl:left-[20%] top-[25%] left-[15%]"></span>

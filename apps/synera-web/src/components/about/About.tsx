@@ -3,8 +3,8 @@
 import React from "react"
 import Presentation from "./Presentation"
 import Information from "./Information"
-import { motion } from "framer-motion"
 import Background from "../ui/Backgrounds"
+import Title from "../ui/Title"
 
 const About = () => {
   const aboutArr = [
@@ -52,17 +52,12 @@ const About = () => {
   return (
     <section className="w-full h-full flex items-center justify-center mt-24">
       <div className="w-[90%] h-max flex items-center justify-center flex-col gap-4">
-        <div className="w-full h-max flex items-center justify-center">
-          <motion.h2
-            initial={{ y: -30, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-5xl font-semibold text-white text-center my-12"
-          >
-            About <span className="text-primary">us</span>
-          </motion.h2>
-        </div>
+        <Title
+          title="About"
+          highlight="us"
+          order="first"
+          className="text-5xl font-semibold text-white text-center my-12"
+        />
         <Background
           bg_types="dots"
           animated

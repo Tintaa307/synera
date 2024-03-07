@@ -3,21 +3,16 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { InfiniteMovingCards } from "@/components/ui/MovingCards"
+import Title from "../ui/Title"
 
 export function Testimonials() {
   return (
     <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <div className="w-full h-max flex items-center justify-center">
-        <motion.h2
-          initial={{ y: -30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="text-5xl font-semibold text-white text-center my-12"
-        >
-          <span className="text-primary">Real</span> testimonials
-        </motion.h2>
-      </div>
+      <Title
+        title="testimonials"
+        highlight="Real"
+        className="text-5xl font-semibold text-white text-center my-12"
+      />
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

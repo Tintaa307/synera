@@ -1,6 +1,5 @@
 import React from "react"
 import Item from "./Item"
-import Title from "../ui/Title"
 
 const Navbar = () => {
   const arrItems = [
@@ -30,7 +29,9 @@ const Navbar = () => {
       <nav className="w-[90%] h-full flex items-center justify-between">
         <div className="w-1/3 h-full flex items-center justify-start">
           <span className="h-2 w-[75px] bg-blue absolute blur-md flex justify-center items-center"></span>
-          <Title title="Synera" className="absolute" />
+          <small className="text-2xl font-bold text-transparent bg-clip-text bg-text-gradient user-select-none">
+            Synera
+          </small>
         </div>
         <ul className="w-2/3 h-full flex items-center justify-evenly flex-row gap-20">
           {arrItems.map((item, index) => (

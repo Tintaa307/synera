@@ -2,7 +2,7 @@
 
 import React from "react"
 import Card from "./Card"
-import { motion } from "framer-motion"
+import Title from "../ui/Title"
 
 const Jobs = () => {
   const JobsArr = [
@@ -35,17 +35,12 @@ const Jobs = () => {
   return (
     <section className="w-full h-max flex justify-center items-start mt-44">
       <div className="w-[90%] h-full flex justify-center items-center flex-col gap-20">
-        <div className="w-full h-full flex justify-center items-start">
-          <motion.h2
-            initial={{ y: -30, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-5xl font-semibold text-white text-center"
-          >
-            <span className="text-primary">Last</span> jobs
-          </motion.h2>
-        </div>
+        <Title
+          title="jobs"
+          highlight="Last"
+          order="second"
+          className="text-5xl font-semibold text-white text-center my-12"
+        />
         <article className="w-full h-max flex justify-center items-center gap-5 z-10 mb-12">
           {JobsArr.map((job, index) => (
             <Card

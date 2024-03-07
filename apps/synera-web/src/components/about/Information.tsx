@@ -36,10 +36,9 @@ const Information = ({ item, index }: InformationProps) => {
       <small className="text-2xl text-primary text-normal">{item.role}</small>
       <div className="flex flex-row gap-4">
         {item.social.map((social, index) => (
-          <>
+          <div key={index}>
             {social.title === "Linkedin" && (
               <RiLinkedinBoxFill
-                key={index}
                 onClick={() => router.push(social.url)}
                 size={50}
                 className="text-primary cursor-pointer hover:text-primary/70 transition-colors duration-200"
@@ -47,7 +46,6 @@ const Information = ({ item, index }: InformationProps) => {
             )}
             {social.title === "Behance" && (
               <RiBehanceFill
-                key={index}
                 onClick={() => router.push(social.url)}
                 size={50}
                 className="text-primary cursor-pointer hover:text-primary/70 transition-colors duration-200"
@@ -55,13 +53,12 @@ const Information = ({ item, index }: InformationProps) => {
             )}
             {social.title === "Github" && (
               <RiGithubFill
-                key={index}
                 onClick={() => router.push(social.url)}
                 size={50}
                 className="text-primary cursor-pointer hover:text-primary/70 transition-colors duration-200"
               />
             )}
-          </>
+          </div>
         ))}
       </div>
     </motion.div>

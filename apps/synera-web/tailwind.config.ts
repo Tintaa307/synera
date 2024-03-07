@@ -15,6 +15,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: { raw: "(max-width: 550px)" },
+        ls: { raw: "(max-width: 680px)" },
+        sm: { raw: "(max-width: 750px)" },
+        ms: { raw: "(max-width: 817px)" },
+        md: { raw: "(max-width: 930px)" },
+        lg: { raw: "(max-width: 1050px)" },
+        xl: { raw: "(max-width: 1200px)" },
+        xxl: { raw: "(max-width: 1473px)" },
+      },
       colors: {
         primary: "#84E9FF",
       },
@@ -26,7 +36,7 @@ const config: Config = {
         "text-gradient": "linear-gradient(to bottom,#fff 40%,hsla(0,0%,0%,0));",
         "box-gradient": "linear-gradient(to bottom,transparent 10%,#000);",
         "circle-gradient":
-          "radial-gradient(circle 350px at 50% 56%, #84E9FF 0%, transparent 100%)",
+          "radial-gradient(circle 350px at 50% 60%, #84E9FF 0%, transparent 100%)",
         "circle-gradient-small":
           "radial-gradient(circle 200px at 50% 56%, #84E9FF 0%, transparent 100%)",
       },

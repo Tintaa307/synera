@@ -63,10 +63,10 @@ const Contact = () => {
           className="text-5xl font-semibold text-white text-center my-12"
         />
         <section className="w-full h-max flex items-center justify-center flex-row">
-          <div className="w-1/2 h-max flex items-center justify-center flex-col gap-12">
+          <div className="w-1/2 h-max flex items-center justify-center flex-col gap-12 ls:w-full">
             <header className="w-full h-max flex items-start justify-start flex-col gap-2">
               <h4 className="text-white/90 text-3xl font-normal">Contact us</h4>
-              <p className="text-white/60 text-sm font-normal">
+              <p className="text-white/60 text-sm font-normal ls:w-full">
                 Leave a request and we will contact you to clarify details
               </p>
             </header>

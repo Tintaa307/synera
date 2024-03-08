@@ -1,6 +1,7 @@
 import React from "react"
 import Item from "./Item"
 import Link from "next/link"
+import { BarsIcon } from "../icons/BarsIcon"
 
 const Navbar = () => {
   const arrItems = [
@@ -28,7 +29,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 z-40 min-w-full h-20 flex items-center justify-center border-b-[1px] border-b-white/20 backdrop-blur-2xl">
       <nav className="w-[90%] h-full flex items-center justify-between ">
-        <div className="w-1/3 h-full flex items-center justify-start">
+        <div className="w-1/3 h-full flex items-center justify-start xxl:w-1/4 xl:justify-between">
           <span className="h-2 w-[75px] bg-blue absolute blur-md flex justify-center items-center"></span>
           <Link
             href={"#Home"}
@@ -37,11 +38,14 @@ const Navbar = () => {
             Synera
           </Link>
         </div>
-        <ul className="w-2/3 h-full flex items-center justify-evenly flex-row gap-20 lg:hidden ">
+        <ul className="w-2/3 h-full flex items-center justify-evenly flex-row gap-20 xxl:w-3/4 xl:hidden">
           {arrItems.map((item, index) => (
             <Item key={index} title={item.title} url={item.link} />
           ))}
         </ul>
+        <div className="relative hidden xl:block z-40">
+          <BarsIcon />
+        </div>
       </nav>
     </header>
   )

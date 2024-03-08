@@ -19,7 +19,7 @@ const Landing = () => {
       >
         <section className="h-screen w-full antialiased flex items-center justify-center">
           <Spotlight
-            className="-top-40 left-0 md:xs:-left-28  md:-top-20"
+            className="-top-40 left-0 xl:-left-40 xl:-top-28 lg:xl:-top-16 ms:lg:xl:top-2 ms:lg:xl:-left-6  ls:ms:lg:xl:top-24 ls:ms:lg:xl:left-24"
             fill="#84E9FF"
           />
           <motion.div
@@ -28,11 +28,11 @@ const Landing = () => {
             transition={{ duration: 0.8, delay: 1.5 }}
             className="w-5/6 xs:w-full h-max flex flex-col gap-6 xs:gap-4 items-center justify-center text-center px-3"
           >
-            <h1 className="w-full h-full text-7xl lg:text-5xl lg:sm:text-4xl sm:xs:text-[28px] sm:xs:leading-7 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+            <h1 className="w-full h-full text-7xl lg:text-6xl md:lg:text-5xl sm:md:lg:text-4xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
               Make your dreams come <br />
               true through a website
             </h1>
-            <p className="text-white/70 text-lg xs:text-sm w-1/2 md:w-full">
+            <p className="text-white/70 text-lg xs:text-sm w-1/2 lg:w-3/4 md:lg:w-[95%] sm:text-base">
               At Synera, we provide high-quality services for the creation or
               scaling of your projects.
             </p>

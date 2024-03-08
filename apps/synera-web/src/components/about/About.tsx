@@ -54,7 +54,7 @@ const About = () => {
       id="About"
       className="w-full h-full flex items-center justify-center mt-24"
     >
-      <div className="w-[90%] h-max flex items-center justify-center flex-col gap-4">
+      <div className="w-[90%] h-max flex items-center justify-center flex-col gap-4 md:w-full">
         <Title
           title="About"
           highlight="us"
@@ -64,13 +64,19 @@ const About = () => {
         <Background
           bg_types="dots"
           animated
-          className="w-full h-max flex flex-row items-center justify-between "
+          className="w-full h-max flex flex-row items-center justify-between sm:flex-col"
         >
           {aboutArr.map((item, index) => (
-            <Presentation key={index} image={item.image} alt={item.alt} />
+            <Presentation
+              key={index}
+              index={index}
+              image={item.image}
+              alt={item.alt}
+              aboutArr={aboutArr}
+            />
           ))}
         </Background>
-        <article className="w-full flex items-center justify-between flex-row">
+        <article className="w-full flex items-center justify-between flex-row sm:hidden">
           {aboutArr.map((item, index) => (
             <Information key={index} item={item} index={index} />
           ))}

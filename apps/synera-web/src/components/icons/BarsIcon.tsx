@@ -1,6 +1,5 @@
 "use client"
 import { motion } from "framer-motion"
-import { useState } from "react"
 
 const variants = {
   closed: {
@@ -15,8 +14,13 @@ const Path = (props: any) => (
   <motion.path fill="none" stroke="#fff" {...props} />
 )
 
-export const BarsIcon = () => {
-  const [isOpen, setIsOpen] = useState(false)
+export const BarsIcon = ({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean
+  setIsOpen: (value: boolean) => void
+}) => {
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"

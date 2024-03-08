@@ -2,15 +2,26 @@
 
 import Link from "next/link"
 import React, { useState } from "react"
-import { useMotionValueEvent, useScroll } from "framer-motion"
+import { motion, useMotionValueEvent, useScroll } from "framer-motion"
 import { cn } from "@/lib/utils"
 
 type ItemProps = {
   url: string
   title: string
+  className?: string
+  action?: () => void
+  entryAnimation?: boolean
+  index?: number
 }
 
-const Item = ({ title, url }: ItemProps) => {
+const Item = ({
+  title,
+  url,
+  className,
+  action,
+  entryAnimation,
+  index,
+}: ItemProps) => {
   const { scrollY } = useScroll()
   const [scroll, setScroll] = useState(0)
 
@@ -19,8 +30,14 @@ const Item = ({ title, url }: ItemProps) => {
     setScroll(latest)
   })
   return (
-    <li className="group">
+    <motion.li
+      initial={entryAnimation ? { opacity: 0, y: -20 } : {}}
+      whileInView={entryAnimation ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.4, type: "tween", delay: 0.3 + index! * 0.1 }}
+      className="group"
+    >
       <Link
+        onClick={action}
         className={cn(
           "text-white/80 text-lg font-medium cursor-pointer group-hover:text-primary transition-colors duration-150",
           {
@@ -30,13 +47,14 @@ const Item = ({ title, url }: ItemProps) => {
               (title === "About us" && scroll > 2700 && scroll < 3700) ||
               (title === "Testimonials" && scroll > 3700 && scroll < 4500) ||
               (title === "Contact" && scroll > 4500),
-          }
+          },
+          className
         )}
         href={url}
       >
         {title}
       </Link>
-    </li>
+    </motion.li>
   )
 }
 

@@ -84,17 +84,17 @@ const Contact = () => {
                 cols={5}
                 name="message"
                 maxLength={200}
-                className="w-2/3 h-[104px] px-4 bg-[#070707] border-[1px] border-white/20 rounded-md placeholder:text-white/70 text-sm text-white/80 font-normal outline-none focus:outline-2 focus:outline-white/50 transition-all duration-200 py-2 resize-none"
+                className="w-2/3 h-[104px] px-4 bg-[#070707] border-[1px] border-white/20 rounded-md placeholder:text-white/70 text-sm text-white/80 font-normal outline-none focus:outline-2 focus:outline-white/50 transition-all duration-200 py-2 resize-none ls:w-4/5"
               />
               <button
                 type="submit"
-                className="w-2/3 h-12 bg-[#070707] rounded-md text-white text-sm border-[1px] border-white/20 font-normal outline-none hover:border-white/60 transition-colors duration-200 mb-12"
+                className="w-2/3 h-12 bg-[#070707] rounded-md text-white text-sm border-[1px] border-white/20 font-normal outline-none hover:border-white/60 transition-colors duration-200 mb-12 ls:w-4/5"
               >
                 Send message
               </button>
             </form>
           </div>
-          <div className="w-1/2 h-max flex items-center justify-center"></div>
+          <div className="w-1/2 h-max flex items-center justify-center ls:hidden"></div>
         </section>
       </div>
     </section>

@@ -28,7 +28,7 @@ const Landing = () => {
             transition={{ duration: 0.8, delay: 1.5 }}
             className="w-5/6 xs:w-full h-max flex flex-col gap-6 xs:gap-4 items-center justify-center text-center px-3"
           >
-            <h1 className="w-full h-full text-7xl lg:text-6xl md:lg:text-5xl sm:md:lg:text-4xl ls:sm:md:lg:text-2xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+            <h1 className="w-full h-full text-7xl lg:text-6xl md:lg:text-5xl sm:md:lg:text-4xl ls:sm:md:lg:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
               Make your dreams come <br />
               true through a website
             </h1>

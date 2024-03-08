@@ -50,7 +50,7 @@ const Services = () => {
     <section
       id="Services"
       className={cn(
-        "w-full min-h-screen flex justify-center items-center gap-10 mt-24 flex-col"
+        "w-full min-h-screen flex justify-center items-center gap-10 mt-24 xs:mt-0 flex-col"
       )}
     >
       <motion.div
@@ -58,7 +58,7 @@ const Services = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 1.2 }}
         viewport={{ once: true }}
-        className="absolute w-full h-full rounded-full bg-circle-gradient"
+        className="absolute w-full h-full rounded-full xxl:bg-circle-gradient-xl bg-circle-gradient-xxl xxl:xs:bg-circle-gradient-small"
       />
       <Title
         title="Our"
@@ -66,7 +66,7 @@ const Services = () => {
         order="first"
         className="text-5xl font-semibold text-white text-center my-12"
       />
-      <div className="w-[90%] flex justify-center items-center gap-5 md:mt-10 flex-wrap relative">
+      <div className="w-[90%] flex justify-center items-center gap-5  flex-wrap relative">
         {ServicesArr.map((service, index) => (
           <Card
             key={index}

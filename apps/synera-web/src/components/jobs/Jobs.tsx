@@ -9,10 +9,10 @@ const Jobs = () => {
     {
       title: "Génesis",
       description:
-        "Genesis Clinic website, a basic landing page with access to various branches and different professionals.",
+        "Genesis Clinic website: a streamlined landing page for accessing different branches and professionals.",
       image: "/images/Genesis.svg",
       link: "https://www.consultoriogenesis.com/",
-      items: ["Website", "UX/UI"],
+      items: ["Website", "UX/UI", "Frontend"],
     },
     {
       title: "Pillwise app",
@@ -37,14 +37,14 @@ const Jobs = () => {
       id="Jobs"
       className="w-full h-max flex justify-center items-start mt-44"
     >
-      <div className="w-[90%] h-full flex justify-center items-center flex-col gap-20">
+      <div className="w-[90%] lg:w-full h-full flex justify-center items-center flex-col gap-20 xs:gap-3">
         <Title
           title="jobs"
           highlight="Last"
           order="second"
           className="text-5xl font-semibold text-white text-center my-12"
         />
-        <article className="w-full h-max flex justify-center items-center gap-5 z-10 mb-12">
+        <article className="w-[90%] h-max flex justify-center items-center gap-5 xs:gap-10 z-10 mb-12 flex-wrap ">
           {JobsArr.map((job, index) => (
             <Card
               key={index}

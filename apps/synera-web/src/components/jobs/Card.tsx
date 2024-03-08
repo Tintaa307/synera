@@ -7,6 +7,7 @@ import {
   IconPencilStar,
   IconCode,
 } from "@tabler/icons-react"
+import Image from "next/image"
 
 type JobsProps = {
   title: string
@@ -34,7 +35,7 @@ const Card = ({
       transition={{ duration: 0.5, delay: 0.8 + index! * 0.1 }}
       viewport={{ once: true }}
       className={cn(
-        "w-1/3 h-max flex flex-col justify-center items-center bg-[#070707] rounded-2xl",
+        "w-[400px] xs:w-full h-max flex flex-col justify-center items-center bg-[#070707] rounded-2xl",
         className
       )}
     >
@@ -45,7 +46,9 @@ const Card = ({
         )}
       >
         <a href={link} className={cn("w-full h-full", className)}>
-          <img
+          <Image
+            width={400}
+            height={256.52}
             src={image}
             className={cn(
               "w-full h-full object-cover rounded-t-2xl border-t-[1px] border-[1px] border-white/20",
@@ -57,13 +60,13 @@ const Card = ({
       </picture>
       <article
         className={cn(
-          "h-max rounded-b-2xl p-4 gap-10 flex justify-start items-start flex-col border-b-[1px] border-x-[1px] border-white/20",
+          "h-full rounded-b-2xl p-4 gap-5 flex justify-start items-start flex-col border-b-[1px] border-x-[1px] border-white/20",
           className
         )}
       >
         <div
           className={cn(
-            "w-full h-1/2 flex justify-center items-start flex-col gap-3"
+            "w-full h-1/3 flex justify-center items-start flex-col gap-3"
           )}
         >
           <h3
@@ -74,6 +77,10 @@ const Card = ({
           >
             {title}
           </h3>
+        </div>
+        <div className={cn(
+          "w-full h-1/3 flex justify-center items-start flex-col gap-3"
+        )}>
           <p
             className={cn(
               "text-white/60 text-start text-sm font-normal",
@@ -85,7 +92,7 @@ const Card = ({
         </div>
         <div
           className={cn(
-            "w-full h-1/2 flex justify-start items-center flex-wrap gap-2"
+            "w-full h-1/3 flex justify-start items-center flex-wrap gap-2"
           )}
         >
           {items.map((item, index) => (

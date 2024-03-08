@@ -35,10 +35,12 @@ const config: Config = {
         "line-gradient": "linear-gradient(90deg, #78d5ff 0%, #2321eb 100%)",
         "text-gradient": "linear-gradient(to bottom,#fff 40%,hsla(0,0%,0%,0));",
         "box-gradient": "linear-gradient(to bottom,transparent 10%,#000);",
-        "circle-gradient":
+        "circle-gradient-xxl":
           "radial-gradient(circle 350px at 50% 60%, #84E9FF 0%, transparent 100%)",
+        "circle-gradient-xl":
+          "radial-gradient(circle 250px at 50% 56%, #84E9FF 0%, transparent 100%)",
         "circle-gradient-small":
-          "radial-gradient(circle 200px at 50% 56%, #84E9FF 0%, transparent 100%)",
+          "radial-gradient(circle 175px at 50% 56%, #84E9FF 0%, transparent 100%)",
         "card-gradient": "linear-gradient(to left top,#040404 60%,#111111);",
       },
       boxShadow: {

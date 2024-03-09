@@ -34,10 +34,10 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="w-full h-[60vh] flex items-center justify-center">
+    <footer className="w-full h-[60vh] md:h-[40vh] flex items-center justify-center md:mt-20">
       <div className="w-[90%] h-full flex items-center justify-center flex-col">
-        <div className="w-full h-full flex items-center justify-center flex-row">
-          <section className="w-1/2 h-full flex items-center justify-center flex-col gap-4">
+        <div className="w-full h-full flex items-center justify-center flex-row md:flex-col">
+          <section className="w-1/2 md:w-full h-full md:h-1/2 flex items-center justify-center flex-col gap-4 md:order-2">
             <div className="flex flex-col">
               <small className="text-white/60 text-sm font-normal">
                 Buenos Aires, Argentina.
@@ -84,13 +84,13 @@ const Footer = () => {
               ))}
             </ul>
           </section>
-          <section className="w-1/2 h-max flex items-center justify-center flex-col gap-4">
+          <section className="w-1/2 md:w-full h-max md:h-1/2 flex items-center justify-center flex-col gap-4 md:order-1">
             <h2 className="text-white text-[22px] font-normal">
               If you liked what you saw.
             </h2>
             <Button
               action={() => router.push("https://calendly.com/synera-app")}
-              className="text-base font-normal h-14 group w-1/3"
+              className="text-base font-normal h-14 group w-1/3 xs:w-1/2"
             >
               Book a call{" "}
               <IconPhoneCall

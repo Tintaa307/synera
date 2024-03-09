@@ -35,7 +35,7 @@ const About = () => {
       ],
     },
     {
-      name: "Tomas Lami",
+      name: "Tomas Lami Guralnik",
       image: "/images/tomas-image.svg",
       alt: "image-tomas",
       role: "Full-Stack Developer",

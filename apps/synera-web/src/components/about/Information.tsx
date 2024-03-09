@@ -34,10 +34,10 @@ const Information = ({ item, index, className }: InformationProps) => {
       )}
       key={index}
     >
-      <h3 className="text-white text-4xl font-semibold xxl:text-3xl lg:xxl:text-2xl sm:lg:xxl:text-4xl">
+      <h3 className="text-white text-4xl font-semibold xxl:text-3xl lg:xxl:text-2xl sm:lg:xxl:text-3xl ">
         {item.name}
       </h3>
-      <small className="text-2xl text-primary text-normal xxl:text-xl lg:xxl:text-lg sm:lg:xxl:text-2xl">
+      <small className="text-2xl text-primary text-normal xxl:text-xl lg:xxl:text-lg sm:lg:xxl:text-xl">
         {item.role}
       </small>
       <div className="flex flex-row gap-4">

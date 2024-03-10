@@ -5,6 +5,7 @@ import Item from "./Item"
 import Link from "next/link"
 import { BarsIcon } from "../icons/BarsIcon"
 import { cn } from "@/lib/utils"
+import { SyneraIcon } from "../icons/SyneraIcon"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -41,7 +42,7 @@ const Navbar = () => {
             href={"#Home"}
             className="relative text-2xl font-bold text-transparent bg-clip-text bg-text-gradient select-none z-50"
           >
-            Synera
+            <SyneraIcon />
           </Link>
         </div>
         <ul className="w-2/3 h-full flex items-center justify-evenly flex-row gap-20 xxl:w-3/4 xl:hidden">

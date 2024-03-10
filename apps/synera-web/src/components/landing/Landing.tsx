@@ -34,7 +34,8 @@ const Landing = () => {
             </h1>
             <p className="text-white/70 text-lg xs:text-sm w-1/2 lg:w-3/4 md:lg:w-[95%] sm:text-base">
               At Synera, we provide high-quality services for the creation or
-              scaling of your projects.
+              scaling of your projects. Additionally, we specialize in fostering
+              strong client relationships
             </p>
             <div className="flex flex-row w-full items-center justify-center h-max gap-12 xs:pt-5">
               <Button

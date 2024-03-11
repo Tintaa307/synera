@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link"
 import React from "react"
 import {
@@ -9,11 +7,11 @@ import {
   RiTwitterXFill,
 } from "@remixicon/react"
 import Button from "../ui/Button"
-import { useRouter } from "next/navigation"
 import { IconPhoneCall } from "@tabler/icons-react"
+import { useTranslations } from "next-intl"
 
 const Footer = () => {
-  const router = useRouter()
+  const t = useTranslations("Footer")
   const socialMedia = [
     {
       name: "Instagram",
@@ -43,7 +41,7 @@ const Footer = () => {
                 Buenos Aires, Argentina.
               </small>
               <small className="text-white/60 text-sm font-normal">
-                Synera team #develop.
+                {t("small")}
               </small>
             </div>
             <ul className="flex flex-row gap-5">
@@ -85,24 +83,22 @@ const Footer = () => {
             </ul>
           </section>
           <section className="w-1/2 md:w-full h-max md:h-1/2 flex items-center justify-center flex-col gap-4 md:order-1">
-            <h2 className="text-white text-[22px] font-normal">
-              If you liked what you saw.
-            </h2>
-            <Button
-              action={() => router.push("https://calendly.com/synera-app")}
-              className="text-base font-normal h-14 group w-1/3 xs:w-1/2"
+            <h2 className="text-white text-[22px] font-normal">{t("title")}</h2>
+            <Link
+              href="https://calendly.com/synera-app"
+              className="text-base font-normal h-14 group w-1/3 xs:w-1/2 text-white/80 bg-[#070707] border-[1px] border-white/20 rounded-md flex items-center justify-center gap-2 hover:bg-[#090909] transition-colors duration-200 "
             >
-              Book a call{" "}
+              {t("button")}{" "}
               <IconPhoneCall
                 size={20}
                 className="text-primary group-hover:animate-wiggle  transition-colors duration-200"
               />{" "}
-            </Button>
+            </Link>
           </section>
         </div>
         <div className="w-full h-max flex items-center justify-center border-t-[1px] border-white/20">
           <small className="text-white/60 text-sm font-normal my-4">
-            © 2024 Synera. All rights reserved.
+            {t("rights")}
           </small>
         </div>
       </div>

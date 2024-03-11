@@ -5,14 +5,16 @@ import Presentation from "./Presentation"
 import Information from "./Information"
 import Background from "../ui/Backgrounds"
 import Title from "../ui/Title"
+import { useTranslations } from "next-intl"
 
 const About = () => {
+  const t = useTranslations("About")
   const aboutArr = [
     {
       name: "Valentín Gonzalez",
       image: "/images/valentin-image.svg",
       alt: "image-valentin",
-      role: "Full-Stack Developer",
+      role: t("card1.role"),
       social: [
         {
           title: "Linkedin",
@@ -25,7 +27,7 @@ const About = () => {
       name: "Bruno Mendiburu",
       image: "/images/bruno-image.svg",
       alt: "image-bruno",
-      role: "Designer",
+      role: t("card2.role"),
       social: [
         {
           title: "Linkedin",
@@ -38,7 +40,7 @@ const About = () => {
       name: "Tomas Lami Guralnik",
       image: "/images/tomas-image.svg",
       alt: "image-tomas",
-      role: "Full-Stack Developer",
+      role: t("card3.role"),
       social: [
         {
           title: "Linkedin",
@@ -56,8 +58,8 @@ const About = () => {
     >
       <div className="w-[90%] h-max flex items-center justify-center flex-col md:w-full">
         <Title
-          title="About"
-          highlight="us"
+          title={t("title")}
+          highlight={t("title2")}
           order="first"
           className="text-5xl font-semibold text-white text-center my-12"
         />

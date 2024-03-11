@@ -3,29 +3,28 @@
 import React from "react"
 import Card from "./Card"
 import Title from "../ui/Title"
+import { useTranslations } from "next-intl"
 
 const Jobs = () => {
+  const t = useTranslations("LastJobs")
   const JobsArr = [
     {
-      title: "Génesis",
-      description:
-        "Genesis Clinic website: a streamlined landing page for accessing different branches and professionals.",
+      title: t("card1.title"),
+      description: t("card1.description"),
       image: "/images/Genesis.svg",
       link: "https://www.consultoriogenesis.com/",
       items: ["Website", "UX/UI", "Frontend"],
     },
     {
-      title: "Pillwise app",
-      description:
-        "The official PillWise app, a reminder for seniors to take their medications and keep track of them.",
+      title: t("card2.title"),
+      description: t("card2.description"),
       image: "/images/Pillwise.svg",
       link: "",
       items: ["Web/App", "UX/UI", "Frontend"],
     },
     {
-      title: "Portfolio web",
-      description:
-        "Valentín Gonzalez's personal portfolio, showcasing various projects and technologies.",
+      title: t("card3.title"),
+      description: t("card3.description"),
       image: "/images/TintaPortfolio.svg",
       link: "https://valentin-portfolio.vercel.app/",
       items: ["Website", "UX/UI", "Frontend"],
@@ -39,8 +38,8 @@ const Jobs = () => {
     >
       <div className="w-[90%] lg:w-full h-full flex justify-center items-center flex-col xs:gap-3">
         <Title
-          title="jobs"
-          highlight="Last"
+          title={t("title2")}
+          highlight={t("title")}
           order="second"
           className="text-5xl font-semibold text-white text-center my-12"
         />

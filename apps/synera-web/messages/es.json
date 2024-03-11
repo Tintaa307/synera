@@ -1,0 +1,97 @@
+{
+  "Navbar": {
+    "item1": "Servicios",
+    "item2": "Últimos trabajos",
+    "item3": "Sobre nosotros",
+    "item4": "Testimonios",
+    "item5": "Contacto"
+  },
+  "Hero": {
+    "title": "Haz realidad tus sueños",
+    "title2": "a través de un sitio web",
+    "description": "En Synera, ofrecemos servicios de alta calidad para la creación o escalado de tus proyectos. Además, nos especializamos en fomentar relaciones sólidas con nuestros clientes",
+    "button": "Reservar una llamada"
+  },
+  "Services": {
+    "title": "Nuestros",
+    "title2": "servicios",
+    "card1": {
+      "title": "Diseño Web y Gráfico",
+      "description": "Convierte tus ideas en un diseño web a medida adaptado a tus necesidades. Utilizamos herramientas innovadoras para una presencia digital única."
+    },
+    "card2": {
+      "title": "Aplicaciones Web",
+      "description": "Crea aplicaciones web personalizadas alineadas con tu diseño y objetivos, ya sea una interfaz elegante o características especializadas."
+    },
+    "card3": {
+      "title": "Servicio de Marketing",
+      "description": "Impulsa tu presencia en línea con contenido social cautivador y anuncios estratégicos en plataformas, mejorando el reconocimiento de marca."
+    },
+    "card4": {
+      "title": "Marca Personal",
+      "description": "Desarrolla o mejora tu marca personal con un enfoque único, creando una identidad distintiva y memorable."
+    },
+    "card5": {
+      "title": "Optimización SEO",
+      "description": "Maximiza la visibilidad en los motores de búsqueda. Nuestra optimización SEO hace que tu sitio sea más accesible, mejorando el posicionamiento y la relevancia."
+    },
+    "card6": {
+      "title": "Embudos de Venta",
+      "description": "Diseña estrategias efectivas de embudo de ventas para aumentar el reconocimiento de marca y las conversiones. Impulsamos el crecimiento empresarial."
+    }
+  },
+  "LastJobs": {
+    "title": "Últimos",
+    "title2": "trabajos",
+    "card1": {
+      "title": "Clínica Génesis",
+      "description": "Sitio web de la Clínica Génesis: una página de aterrizaje simplificada para acceder a diferentes sucursales y profesionales."
+    },
+    "card2": {
+      "title": "Aplicación Pillwise",
+      "description": "La aplicación oficial de PillWise, un recordatorio para personas mayores de tomar sus medicamentos y hacer un seguimiento de ellos."
+    },
+    "card3": {
+      "title": "Portafolio web",
+      "description": "Portafolio personal de Valentín González, mostrando varios proyectos y tecnologías muy recientes y utilizadas para un desarrollo optimo."
+    }
+  },
+  "About": {
+    "title": "Sobre",
+    "title2": "nosotros",
+    "card1": {
+      "role": "Desarrollador Full-Stack"
+    },
+    "card2": {
+      "role": "Diseñador"
+    },
+    "card3": {
+      "role": "Desarrollador Full-Stack"
+    }
+  },
+  "Contact": {
+    "title2": "Hablemos",
+    "title": "un poco",
+    "subtitle": "Contáctanos",
+    "description": "Deja una solicitud y te contactaremos para aclarar detalles.",
+    "input1": {
+      "placeholder": "Nombre completo..."
+    },
+    "input2": {
+      "placeholder": "Correo electrónico..."
+    },
+    "input3": {
+      "placeholder": "Teléfono..."
+    },
+    "input4": {
+      "placeholder": "Escribe tu mensaje..."
+    },
+    "button": "Enviar mensaje"
+  },
+  "Footer": {
+    "small": "Equipo Synera #develop.",
+    "title": "Si te gustó lo que viste.",
+    "button": "Reservar una llamada",
+    "rights": "© 2024 Synera. Todos los derechos reservados."
+  }
+}

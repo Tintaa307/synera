@@ -6,28 +6,30 @@ import Link from "next/link"
 import { BarsIcon } from "../icons/BarsIcon"
 import { cn } from "@/lib/utils"
 import { SyneraIcon } from "../icons/SyneraIcon"
+import { useTranslations } from "next-intl"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const t = useTranslations("Navbar")
   const arrItems = [
     {
-      title: "Services",
+      title: t("item1"),
       link: "#Services",
     },
     {
-      title: "Last Jobs",
+      title: t("item2"),
       link: "#Jobs",
     },
     {
-      title: "About us",
+      title: t("item3"),
       link: "#About",
     },
     {
-      title: "Testimonials",
+      title: t("item4"),
       link: "#Testimonials",
     },
     {
-      title: "Contact",
+      title: t("item5"),
       link: "#Contact",
     },
   ]

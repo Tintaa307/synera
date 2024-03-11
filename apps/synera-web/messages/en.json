@@ -1,0 +1,97 @@
+{
+  "Navbar": {
+    "item1": "Services",
+    "item2": "Last Jobs",
+    "item3": "About us",
+    "item4": "Testimonials",
+    "item5": "Contact"
+  },
+  "Hero": {
+    "title": "Make your dreams come",
+    "title2": "true through a website",
+    "description": "At Synera, we provide high-quality services for the creation or scaling of your projects. Additionally, we specialize in fostering strong client relationships",
+    "button": "Book a call"
+  },
+  "Services": {
+    "title": "Our",
+    "title2": "services",
+    "card1": {
+      "title": "Web & Graphic Design",
+      "description": "Turn your ideas into a bespoke web design tailored to your needs. We use innovative tools for a unique digital presence."
+    },
+    "card2": {
+      "title": "Web Applications",
+      "description": "Craft custom web applications aligned with your design and goals, whether it's an elegant interface or specialized features."
+    },
+    "card3": {
+      "title": "Marketing Service",
+      "description": "Boost your online presence with captivating social content and strategic ads on platforms, enhancing brand recognition."
+    },
+    "card4": {
+      "title": "Personal Brand",
+      "description": "Develop or enhance your personal brand with a unique focus, creating a distinct and memorable identity."
+    },
+    "card5": {
+      "title": "SEO Optimization",
+      "description": "Maximize visibility on search engines. Our SEO optimization makes your site more accessible, improving positioning and relevance."
+    },
+    "card6": {
+      "title": "Sales Funnels",
+      "description": "Design effective sales funnel strategies for increased brand recognition and conversions. We drive business growth."
+    }
+  },
+  "LastJobs": {
+    "title": "Last",
+    "title2": "jobs",
+    "card1": {
+      "title": "Genesis",
+      "description": "Genesis Clinic website: a streamlined landing page for accessing different branches and professionals."
+    },
+    "card2": {
+      "title": "Pillwise app",
+      "description": "The official PillWise app, a reminder for seniors to take their medications and keep track of them."
+    },
+    "card3": {
+      "title": "Portfolio web",
+      "description": "Valentín Gonzalez's personal portfolio, showcasing various projects and technologies."
+    }
+  },
+  "About": {
+    "title": "About",
+    "title2": "us",
+    "card1": {
+      "role": "Full-Stack Developer"
+    },
+    "card2": {
+      "role": "Designer"
+    },
+    "card3": {
+      "role": "Full-Stack Developer"
+    }
+  },
+  "Contact": {
+    "title": "LLets have a",
+    "title2": "talk",
+    "subtitle": "Contact us",
+    "description": "Leave a request and we will contact you to clarify details.",
+    "input1": {
+      "placeholder": "Full name..."
+    },
+    "input2": {
+      "placeholder": "Email..."
+    },
+    "input3": {
+      "placeholder": "Telefono..."
+    },
+    "input4": {
+      "placeholder": "Escribe tu mensaje..."
+    },
+    "button": "Send message"
+  },
+  "Footer": {
+    "small": "Synera team #develop.",
+    "title": "If you liked what you saw.",
+    "button": "Book a call",
+    "rights": "© 2024 Synera. All rights reserved."
+  }
+}

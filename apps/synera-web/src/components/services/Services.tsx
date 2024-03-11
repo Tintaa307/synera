@@ -5,43 +5,44 @@ import Card from "./Card"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import Title from "../ui/Title"
+import { useTranslations } from "next-intl"
 
 const Services = () => {
+  const t = useTranslations("Services")
   const ServicesArr = [
     {
-      title: "Web & Graphic Design",
-      description:
-        "Turn your ideas into a bespoke web design tailored to your needs. We use innovative tools for a unique digital presence.",
+      title: t("card1.title"),
+      description: t("card1.description"),
       icon: "/icons/DesignIcon.svg",
     },
     {
-      title: "Web Applications",
-      description:
-        "Craft custom web applications aligned with your design and goals, whether it's an elegant interface or specialized features.",
+      title: t("card2.title"),
+      description: t("card2.description"),
+
       icon: "/icons/WebAppsIcon.svg",
     },
     {
-      title: "Marketing Service",
-      description:
-        "Boost your online presence with captivating social content and strategic ads on platforms, enhancing brand recognition.",
+      title: t("card3.title"),
+      description: t("card3.description"),
+
       icon: "/icons/MarketingIcon.svg",
     },
     {
-      title: "Personal Brand",
-      description:
-        "Develop or enhance your personal brand with a unique focus, creating a distinct and memorable identity.",
+      title: t("card4.title"),
+      description: t("card4.description"),
+
       icon: "/icons/BrandIcon.svg",
     },
     {
-      title: "SEO Optimization",
-      description:
-        "Maximize visibility on search engines. Our SEO optimization makes your site more accessible, improving positioning and relevance.",
+      title: t("card5.title"),
+      description: t("card5.description"),
+
       icon: "/icons/SEOIcon.svg",
     },
     {
-      title: "Sales Funnels",
-      description:
-        "Design effective sales funnel strategies for increased brand recognition and conversions. We drive business growth.",
+      title: t("card6.title"),
+      description: t("card6.description"),
+
       icon: "/icons/SalesICON.svg",
     },
   ]
@@ -61,10 +62,10 @@ const Services = () => {
         className="absolute w-full h-full rounded-full xxl:bg-circle-gradient-xl bg-circle-gradient-xxl xxl:xs:bg-circle-gradient-small"
       />
       <Title
-        title="Our"
-        highlight="services"
+        title={t("title")}
+        highlight={t("title2")}
         order="first"
-        className="text-5xl font-semibold text-white text-center"
+        className="text-5xl font-semibold text-white text-center my-12"
       />
       <div className="w-[90%] flex justify-center items-center gap-5 flex-wrap relative">
         {ServicesArr.map((service, index) => (

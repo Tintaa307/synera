@@ -7,9 +7,11 @@ import { IconCalendarPlus } from "@tabler/icons-react"
 import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 import Background from "../ui/Backgrounds"
+import { useTranslations } from "next-intl"
 
 const Landing = () => {
   const router = useRouter()
+  const t = useTranslations("Hero")
   return (
     <main id="Home" className="w-full h-screen">
       <Background
@@ -28,21 +30,23 @@ const Landing = () => {
             transition={{ duration: 0.8, delay: 1.5 }}
             className="w-5/6 xs:w-full h-max flex flex-col gap-6 xs:gap-4 items-center justify-center text-center px-3"
           >
-            <h1 className="w-full h-full text-7xl lg:text-6xl md:lg:text-5xl sm:md:lg:text-4xl ls:sm:md:lg:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-              Make your dreams come <br />
-              true through a website
-            </h1>
+            <div className="flex flex-col gap-2">
+              <h1 className="w-full h-full text-7xl lg:text-6xl md:lg:text-5xl sm:md:lg:text-4xl ls:sm:md:lg:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                {t("title")}
+              </h1>
+              <h1 className="w-full h-full text-7xl lg:text-6xl md:lg:text-5xl sm:md:lg:text-4xl ls:sm:md:lg:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                {t("title2")}
+              </h1>
+            </div>
             <p className="text-white/70 text-lg xs:text-sm w-1/2 lg:w-3/4 md:lg:w-[95%] sm:text-base">
-              At Synera, we provide high-quality services for the creation or
-              scaling of your projects. Additionally, we specialize in fostering
-              strong client relationships
+              {t("description")}
             </p>
             <div className="flex flex-row w-full items-center justify-center h-max gap-12 xs:pt-5">
               <Button
                 action={() => router.push("https://calendly.com/synera-app")}
-                className="text-base font-normal h-14 group"
+                className="text-base font-normal h-14 group w-max px-4"
               >
-                Book a call{" "}
+                {t("button")}{" "}
                 <IconCalendarPlus
                   size={20}
                   strokeWidth={1.5}

@@ -7,12 +7,14 @@ import { Toaster, toast } from "sonner"
 import { ContactSchema } from "@/lib/validations/Schema"
 import { z } from "zod"
 import axios from "axios"
+import { useTranslations } from "next-intl"
 
 const Contact = () => {
+  const t = useTranslations("Contact")
   const inputs = [
-    { type: "text", placeholder: "Full name...", name: "name" },
-    { type: "email", placeholder: "Email...", name: "email" },
-    { type: "tel", placeholder: "Phone...", name: "phone" },
+    { type: "text", placeholder: t("input1.placeholder"), name: "name" },
+    { type: "email", placeholder: t("input1.placeholder"), name: "email" },
+    { type: "tel", placeholder: t("input1.placeholder"), name: "phone" },
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -57,17 +59,19 @@ const Contact = () => {
       <Toaster position="top-center" duration={3000} richColors />
       <div className="w-[90%] h-max flex items-center justify-center flex-col ">
         <Title
-          title="Lets have a "
-          highlight="talk"
+          title={t("title2")}
+          highlight={t("title")}
           order="first"
           className="text-5xl font-semibold text-white text-center my-12"
         />
         <section className="w-full h-max flex items-start sm:items-center justify-center flex-row">
           <div className="w-1/2 h-max flex items-center justify-center flex-col gap-12 xl:w-full">
             <header className="w-full h-max flex sm:items-center items-center justify-center flex-col gap-2">
-              <h4 className="text-white/90 text-3xl font-normal">Contact us</h4>
+              <h4 className="text-white/90 text-3xl font-normal">
+                {t("subtitle")}
+              </h4>
               <p className="text-white/60 text-sm font-normal ">
-                Leave a request and we will contact you to clarify details
+                {t("description")}
               </p>
             </header>
             <form
@@ -79,7 +83,7 @@ const Contact = () => {
                 <Input key={index} {...input} />
               ))}
               <textarea
-                placeholder="Write your message..."
+                placeholder={t("input4.placeholder")}
                 rows={5}
                 cols={5}
                 name="message"
@@ -90,7 +94,7 @@ const Contact = () => {
                 type="submit"
                 className="w-2/3 h-12 bg-[#070707] rounded-md text-white text-sm border-[1px] border-white/20 font-normal outline-none hover:border-white/60 transition-colors duration-200 mb-12 sm:w-full"
               >
-                Send message
+                {t("button")}
               </button>
             </form>
           </div>

@@ -13,8 +13,8 @@ const Contact = () => {
   const t = useTranslations("Contact")
   const inputs = [
     { type: "text", placeholder: t("input1.placeholder"), name: "name" },
-    { type: "email", placeholder: t("input1.placeholder"), name: "email" },
-    { type: "tel", placeholder: t("input1.placeholder"), name: "phone" },
+    { type: "email", placeholder: t("input2.placeholder"), name: "email" },
+    { type: "tel", placeholder: t("input3.placeholder"), name: "phone" },
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

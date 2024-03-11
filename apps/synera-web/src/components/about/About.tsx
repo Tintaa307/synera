@@ -78,7 +78,7 @@ const About = () => {
             />
           ))}
         </Background>
-        <article className="w-full flex items-center justify-between flex-row sm:hidden">
+        <article className="w-full flex items-center justify-between flex-row sm:hidden mt-4">
           {aboutArr.map((item, index) => (
             <Information key={index} item={item} index={index} />
           ))}

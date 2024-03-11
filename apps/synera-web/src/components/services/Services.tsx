@@ -64,9 +64,9 @@ const Services = () => {
         title="Our"
         highlight="services"
         order="first"
-        className="text-5xl font-semibold text-white text-center my-12"
+        className="text-5xl font-semibold text-white text-center"
       />
-      <div className="w-[90%] flex justify-center items-center gap-5  flex-wrap relative">
+      <div className="w-[90%] flex justify-center items-center gap-5 flex-wrap relative">
         {ServicesArr.map((service, index) => (
           <Card
             key={index}

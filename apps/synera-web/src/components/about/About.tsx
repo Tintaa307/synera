@@ -54,7 +54,7 @@ const About = () => {
       id="About"
       className="w-full h-full flex items-center justify-center mt-24"
     >
-      <div className="w-[90%] h-max flex items-center justify-center flex-col gap-4 md:w-full">
+      <div className="w-[90%] h-max flex items-center justify-center flex-col md:w-full">
         <Title
           title="About"
           highlight="us"

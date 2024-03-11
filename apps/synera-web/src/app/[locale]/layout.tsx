@@ -14,6 +14,13 @@ export const metadata: Metadata = {
     "At Synera, we provide high-quality services for the creation or scaling of your projects. Additionally, we specialize in fostering strong client relationships.",
   keywords:
     "Synera, software, development, web, mobile, design, consulting, services, projects, client, relationships, agency, company, business, technology, innovation, creativity, quality, experience, expertise, team, professionals, experts, solutions, digital, transformation, growth, success, strategy, development, design, consulting, services, projects, client, relationships, agency, company, business, technology, innovation, creativity, quality, experience, expertise, team, professionals, experts, solutions, digital, transformation, growth, success, strategy",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      url: "/favicon.ico",
+    },
+  ],
 }
 
 export default function RootLayout({

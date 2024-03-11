@@ -86,7 +86,7 @@ const Footer = () => {
             <h2 className="text-white text-[22px] font-normal">{t("title")}</h2>
             <Link
               href="https://calendly.com/synera-app"
-              className="text-base font-normal h-14 group w-1/3 xs:w-1/2 text-white/80 bg-[#070707] border-[1px] border-white/20 rounded-md flex items-center justify-center gap-2 hover:bg-[#090909] transition-colors duration-200 "
+              className="text-base font-normal h-14 group w-max px-4 text-white/80 bg-[#070707] border-[1px] border-white/20 rounded-md flex items-center justify-center gap-2 hover:bg-[#090909] transition-colors duration-200 "
             >
               {t("button")}{" "}
               <IconPhoneCall

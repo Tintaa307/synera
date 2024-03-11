@@ -59,8 +59,8 @@ const Contact = () => {
       <Toaster position="top-center" duration={3000} richColors />
       <div className="w-[90%] h-max flex items-center justify-center flex-col ">
         <Title
-          title={t("title2")}
-          highlight={t("title")}
+          title={t("title")}
+          highlight={t("title2")}
           order="first"
           className="text-5xl font-semibold text-white text-center my-12"
         />

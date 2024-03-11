@@ -4,6 +4,7 @@ import "./globals.css"
 import Navbar from "@/components/navbar/Navbar"
 import Footer from "@/components/footer/Footer"
 import { NextIntlClientProvider, useMessages } from "next-intl"
+import Lang from "@/components/trigger/Lang"
 
 const workSans = Work_Sans({ subsets: ["latin"] })
 
@@ -29,6 +30,7 @@ export default function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
+          <Lang />
         </NextIntlClientProvider>
         <Footer />
       </body>

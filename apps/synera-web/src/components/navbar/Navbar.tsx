@@ -24,10 +24,7 @@ const Navbar = () => {
       title: t("item3"),
       link: "#About",
     },
-    {
-      title: t("item4"),
-      link: "#Testimonials",
-    },
+
     {
       title: t("item5"),
       link: "#Contact",
@@ -36,7 +33,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 z-40 min-w-full h-20 flex items-center justify-center border-b-[1px] border-b-white/20 backdrop-blur-2xl">
-      <nav className="w-[90%] h-full flex items-center justify-between ">
+      <nav className="w-[90%] h-full flex items-center justify-between">
         <div className="w-1/3 h-full flex items-center justify-start xxl:w-1/4 xl:justify-between">
           <span className="h-2 w-[75px] bg-blue absolute blur-md flex justify-center items-center"></span>
           <Link

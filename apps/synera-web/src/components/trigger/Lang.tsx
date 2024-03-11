@@ -10,7 +10,7 @@ const Lang = () => {
   const [lang, setlang] = useState(pathname.slice(1, 3))
 
   return (
-    <div className="fixed bottom-5 right-5 w-12 h-12 bg-[#070707] border-[1px] border-white/20 rounded-full cursor-pointer">
+    <div className="fixed bottom-5 right-5 w-12 h-12 bg-[#070707] border-[1px] border-white/20 rounded-full cursor-pointer z-50">
       <h6
         onClick={() => {
           if (lang === "es") {

@@ -1,4 +1,5 @@
 import About from "@/components/about/About"
+import AboutUs from "@/components/about/AboutUs"
 import Contact from "@/components/contact/Contact"
 import Jobs from "@/components/jobs/Jobs"
 import Landing from "@/components/landing/Landing"

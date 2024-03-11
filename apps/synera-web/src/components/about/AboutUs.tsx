@@ -1,12 +1,12 @@
 "use client"
+import React from 'react'
+import Title from '../ui/Title'
+import Presentation from './Presentation'
+import Information from './Information'
+import PresentationNew from './PresentationNew'
+import InfoNew from './InfoNew'
 
-import React from "react"
-import Presentation from "./Presentation"
-import Information from "./Information"
-import Background from "../ui/Backgrounds"
-import Title from "../ui/Title"
-
-const About = () => {
+const AboutUs = () => {
   const aboutArr = [
     {
       name: "Valentín Gonzalez",
@@ -54,6 +54,7 @@ const About = () => {
       id="About"
       className="w-full h-full flex items-center justify-center mt-24"
     >
+
       <div className="w-[90%] h-max flex items-center justify-center flex-col gap-4 md:w-full">
         <Title
           title="About"
@@ -61,43 +62,25 @@ const About = () => {
           order="first"
           className="text-5xl font-semibold text-white text-center my-12"
         />
-        <Background
-          bg_types="dots"
-          animated
-          className="w-full h-max flex flex-row items-center justify-between sm:flex-col"
-        >
+        <div className='w-full md:w-[80%] h-max flex flex-row items-center justify-between lg:flex-col gap-10'>
           {aboutArr.map((item, index) => (
-            <Presentation
-              name=""
-              role=""
-              key={index}
-              index={index}
-              image={item.image}
-              alt={item.alt}
-              aboutArr={aboutArr}
-            />
+            <div className='w-[580px] h-[650px] md:w-full bg-white p-5 flex justify-center items-center flex-col rounded-3xl gap-5'>
+              <PresentationNew
+                key={index}
+                index={index}
+                name={item.name}
+                role={item.role}
+                image={item.image}
+                alt={item.alt}
+                aboutArr={aboutArr}
+              />
+              <InfoNew key={index} item={item} index={index} />
+            </div>
           ))}
-        </Background>
-        <article className="w-full flex items-center justify-between flex-row sm:hidden">
-          {aboutArr.map((item, index) => (
-            <Information key={index} item={item} index={index} />
-          ))}
-        </article>
+        </div>
       </div>
     </section>
   )
 }
 
-export default About
-
-{
-  /* <Background
-bg_types="dots"
-animated
-className="w-full h-max flex flex-row items-center justify-between "
->
-{aboutArr.map((item, index) => (
-  <Presentation key={index} image={item.image} alt={item.alt} />
-))}
-</Background> */
-}
+export default AboutUs

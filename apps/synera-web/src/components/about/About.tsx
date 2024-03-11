@@ -68,8 +68,6 @@ const About = () => {
         >
           {aboutArr.map((item, index) => (
             <Presentation
-              name=""
-              role=""
               key={index}
               index={index}
               image={item.image}

@@ -22,7 +22,7 @@ const Information = ({ item, index, className }: InformationProps) => {
     <motion.div
       initial={{ y: -30, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, delay: 0.9 }}
+      transition={{ duration: 0.5, delay: 1.8 }}
       viewport={{ once: true }}
       className={cn(
         "h-max flex items-center justify-center flex-col gap-3 mb-12",

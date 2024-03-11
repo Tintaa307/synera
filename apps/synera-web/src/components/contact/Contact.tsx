@@ -62,9 +62,9 @@ const Contact = () => {
           order="first"
           className="text-5xl font-semibold text-white text-center my-12"
         />
-        <section className="w-full h-max flex items-start sm:items-center justify-start flex-row">
+        <section className="w-full h-max flex items-start sm:items-center justify-center flex-row">
           <div className="w-1/2 h-max flex items-center justify-center flex-col gap-12 xl:w-full">
-            <header className="w-full h-max flex sm:items-center items-start justify-start flex-col gap-2">
+            <header className="w-full h-max flex sm:items-center items-center justify-center flex-col gap-2">
               <h4 className="text-white/90 text-3xl font-normal">Contact us</h4>
               <p className="text-white/60 text-sm font-normal ">
                 Leave a request and we will contact you to clarify details
@@ -73,7 +73,7 @@ const Contact = () => {
             <form
               onSubmit={handleSubmit}
               autoComplete="off"
-              className="w-full h-max flex sm:items-center items-start justify-start flex-col gap-8"
+              className="w-full h-max flex sm:items-center items-center justify-center flex-col gap-8"
             >
               {inputs.map((input, index) => (
                 <Input key={index} {...input} />

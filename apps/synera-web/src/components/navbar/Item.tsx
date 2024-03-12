@@ -43,10 +43,15 @@ const Item = ({
           {
             "text-primary":
               (title === "Services" && scroll > 800 && scroll < 1900) ||
+              (title === "Servicios" && scroll > 800 && scroll < 1900) ||
               (title === "Last Jobs" && scroll > 1900 && scroll < 2700) ||
+              (title === "Proyectos" && scroll > 1900 && scroll < 2700) ||
               (title === "About us" && scroll > 2700 && scroll < 3700) ||
+              (title === "Nosotros" && scroll > 2700 && scroll < 3700) ||
               (title === "Testimonials" && scroll > 3700 && scroll < 4500) ||
-              (title === "Contact" && scroll > 4500),
+              (title === "Testimonios" && scroll > 3700 && scroll < 4500) ||
+              (title === "Contact" && scroll > 4500) ||
+              (title === "Contacto" && scroll > 4500)
           },
           className
         )}

@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { usePathname, useRouter } from "next/navigation"
 import React, { useState } from "react"
 
@@ -10,7 +9,7 @@ const Lang = () => {
   const [lang, setlang] = useState(pathname.slice(1, 3))
 
   return (
-    <div className="fixed bottom-5 right-5 w-12 h-12 bg-[#070707] border-[1px] border-white/20 rounded-full cursor-pointer z-50">
+    <div className="fixed bottom-5 right-5 w-12 h-12 bg-[#070707] border-[1px] border-white/20 rounded-full cursor-pointer z-50 hover:border-white/30 transition-all">
       <h6
         onClick={() => {
           if (lang === "es") {

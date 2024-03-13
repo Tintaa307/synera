@@ -45,11 +45,11 @@ const Navbar = () => {
             <SyneraIcon />
           </Link>
         </div>
-        <div className="w-3/5 h-full flex justify-end items-center gap-2">
+        <div className="w-2/3 h-full flex justify-end items-center gap-2">
           {/* <Button className="w-24 h-12 bg-white text-black font-semibold rounded-3xl">
             Service
           </Button> */}
-          <ul className="w-4/5 h-[60%] flex items-center justify-evenly flex-row md:hidden bg-[#141414] rounded-3xl">
+          <ul className="w-full h-[60%] flex items-center justify-between flex-row md:hidden  rounded-3xl">
             {arrItems.map((item, index) => (
               <Item key={index} title={item.title} url={item.link} />
             ))}

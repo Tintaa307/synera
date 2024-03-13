@@ -50,8 +50,8 @@ const Item = ({
               (title === "Nosotros" && scroll > 2700 && scroll < 3700) ||
               (title === "Testimonials" && scroll > 3700 && scroll < 4500) ||
               (title === "Testimonios" && scroll > 3700 && scroll < 4500) ||
-              (title === "Contact" && scroll > 4500) ||
-              (title === "Contacto" && scroll > 4500)
+              (title === "Contact" && scroll > 3700) ||
+              (title === "Contacto" && scroll > 3700)
           },
           className
         )}

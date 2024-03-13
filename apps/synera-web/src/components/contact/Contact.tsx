@@ -58,26 +58,20 @@ const Contact = () => {
     >
       <Toaster position="top-center" duration={3000} richColors />
       <div className="w-[90%] h-max flex items-center justify-center flex-col ">
-        <Title
-          title={t("title")}
-          highlight={t("title2")}
-          order="first"
-          className="text-5xl font-semibold text-white text-center my-12"
-        />
         <section className="w-full h-max flex items-start sm:items-center justify-center flex-row">
           <div className="w-1/2 h-max flex items-center justify-center flex-col gap-12 xl:w-full">
             <header className="w-full h-max flex sm:items-center items-center justify-center flex-col gap-2">
               <h4 className="text-white/90 text-3xl font-normal">
                 {t("subtitle")}
               </h4>
-              <p className="text-white/60 text-sm font-normal ">
+              <p className="text-white/60 text-sm font-normal  text-center">
                 {t("description")}
               </p>
             </header>
             <form
               onSubmit={handleSubmit}
               autoComplete="off"
-              className="w-full h-max flex sm:items-center items-center justify-center flex-col gap-8"
+              className="w-full xl:w-2/3 h-max flex sm:items-center items-center justify-center flex-col gap-8 xl:md:w-full"
             >
               {inputs.map((input, index) => (
                 <Input key={index} {...input} />

@@ -6,7 +6,6 @@ import {
   RiGithubFill,
   RiTwitterXFill,
 } from "@remixicon/react"
-import Button from "../ui/Button"
 import { IconPhoneCall } from "@tabler/icons-react"
 import { useTranslations } from "next-intl"
 

@@ -19,11 +19,7 @@ type PresentationProps = {
 
 const Presentation = ({ alt, image, aboutArr, index }: PresentationProps) => {
   return (
-    <motion.picture
-      initial={{ y: -30, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, delay: 1.5 }}
-      viewport={{ once: true }}
+    <picture
       className="relative z-10 sm:w-full sm:flex sm:items-center sm:justify-center sm:flex-col gap-8"
     >
       <Image src={image} alt={alt} width={460} height={689} className="xs:w-[300px] xs:h-[450px]" />
@@ -39,7 +35,7 @@ const Presentation = ({ alt, image, aboutArr, index }: PresentationProps) => {
           />
         ))}
       </article>
-    </motion.picture>
+    </picture>
   )
 }
 

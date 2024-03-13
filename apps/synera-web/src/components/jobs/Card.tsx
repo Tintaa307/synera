@@ -29,11 +29,8 @@ const Card = ({
   index,
 }: JobsProps) => {
   return (
-    <motion.div
-      initial={{ x: -30, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.5, delay: 0.8 + index! * 0.1 }}
-      viewport={{ once: true }}
+    <div
+
       className={cn(
         "w-[400px] xs:w-full h-max flex flex-col justify-center items-center bg-[#070707] rounded-2xl",
         className
@@ -120,7 +117,7 @@ const Card = ({
           ))}
         </div>
       </article>
-    </motion.div>
+    </div>
   )
 }
 

@@ -55,10 +55,7 @@ const Services = () => {
       )}
     >
       <motion.div
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 1.2 }}
-        viewport={{ once: true }}
+
         className="absolute w-full h-full rounded-full xxl:bg-circle-gradient-xl bg-circle-gradient-xxl xxl:xs:bg-circle-gradient-small"
       />
       <Title

@@ -1,4 +1,4 @@
-# Welcome to Synera!
+# 👋 Welcome to Synera!
 
 ![Logo del Proyecto](apps/synera-web/public/icons/synera-web.png)
 

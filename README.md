@@ -47,6 +47,6 @@ Maximize visibility on search engines. Our SEO optimization makes your site more
 
 Design effective sales funnel strategies for increased brand recognition and conversions. We drive business growth.
 
-## 📒 License
+## ⚖ License
 
 Synera is MIT licensed.

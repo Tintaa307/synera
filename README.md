@@ -6,12 +6,12 @@ At Synera, we provide high-quality services for the creation or scaling of your 
 
 ## Services we provide
 
-- [🎨 Web & Graphic Design](#Web&GraphicDesign)
-- [<⁄> Web Applications](#WebApplications)
-- [🔊 Marketing Service](#MarketingService)
-- [✏ Personal Brand](#PersonalBrand)
-- [↗ SEO Optimization](#SEOptimization)
-- [💰 Sales Funnels](#SalesFunnels)
+- [🎨 Web & Graphic Design](#-web--graphic-design)
+- [<⁄> Web Applications](#-web-applications)
+- [🔊 Marketing Service](#-marketing-service)
+- [✏ Personal Brand](#-personal-brand)
+- [↗ SEO Optimization](#-seo-optimization)
+- [💰 Sales Funnels](#-sales-funnels)
 
 ## Authors
 
@@ -46,3 +46,5 @@ Maximize visibility on search engines. Our SEO optimization makes your site more
 ## 💰 Sales Funnels
 
 Design effective sales funnel strategies for increased brand recognition and conversions. We drive business growth.
+
+## 📒 License

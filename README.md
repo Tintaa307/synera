@@ -1,6 +1,6 @@
 # Welcome to Synera!
 
-![Logo del Proyecto](public/synera-web.png)
+![Logo del Proyecto](apps/synera-web/public/icons/synera-web.png)
 
 ## Tabla de Contenidos
 

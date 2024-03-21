@@ -4,7 +4,7 @@
 
 At Synera, we provide high-quality services for the creation or scaling of your projects. Additionally, we specialize in fostering strong client relationships.
 
-## services we provide
+## Services we provide
 
 - [🎨 Web & Graphic Design](#Web&GraphicDesign)
 - [<⁄> Web Applications](#WebApplications)

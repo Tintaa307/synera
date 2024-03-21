@@ -2,9 +2,4 @@
 
 ![Logo del Proyecto](apps/synera-web/public/icons/synera-web.png)
 
-## Tabla de Contenidos
-
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
+At Synera, we provide high-quality services for the creation or scaling of your projects. Additionally, we specialize in fostering strong client relationships.

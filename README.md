@@ -17,9 +17,9 @@ At Synera, we provide high-quality services for the creation or scaling of your 
 
 A list of the original co-authors of Synera that helped people to make their dreams come true!
 
--[Valentín González]
--[Tomás Lami Guralinik]
--[Bruno Mendiburu]
+- [Valentín González]
+- [Tomás Lami Guralinik]
+- [Bruno Mendiburu]
 
 ---
 

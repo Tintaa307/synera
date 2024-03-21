@@ -1,6 +1,6 @@
-# Nombre del Proyecto
+# Welcome to Synera!
 
-Descripción concisa del proyecto.
+![Logo del Proyecto](public/synera-web.png)
 
 ## Tabla de Contenidos
 

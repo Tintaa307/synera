@@ -5,44 +5,37 @@ import Card from "./Card"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import Title from "../ui/Title"
-import { useTranslations } from "next-intl"
 
 const Services = () => {
-  const t = useTranslations("Services")
   const ServicesArr = [
     {
-      title: t("card1.title"),
-      description: t("card1.description"),
+      title: "Diseño Web y Gráfico",
+      description: "Convierte tus ideas en un diseño web a medida adaptado a tus necesidades. Utilizamos herramientas innovadoras para una presencia digital única.",
       icon: "/icons/DesignIcon.svg",
     },
     {
-      title: t("card2.title"),
-      description: t("card2.description"),
-
+      title: "Aplicaciones Web",
+      description: "Crea aplicaciones web personalizadas alineadas con tu diseño y objetivos, ya sea una interfaz elegante o características especializadas.",
       icon: "/icons/WebAppsIcon.svg",
     },
     {
-      title: t("card3.title"),
-      description: t("card3.description"),
-
+      title: "Servicio de Marketing",
+      description: "Impulsa tu presencia en línea con contenido social cautivador y anuncios estratégicos en plataformas, mejorando el reconocimiento de marca.",
       icon: "/icons/MarketingIcon.svg",
     },
     {
-      title: t("card4.title"),
-      description: t("card4.description"),
-
+      title: "Marca Personal",
+      description: "Desarrolla o mejora tu marca personal con un enfoque único, creando una identidad distintiva y memorable.",
       icon: "/icons/BrandIcon.svg",
     },
     {
-      title: t("card5.title"),
-      description: t("card5.description"),
-
+      title: "Optimización SEO",
+      description: "Maximiza la visibilidad en los motores de búsqueda. Nuestra optimización SEO hace que tu sitio sea más accesible, mejorando el posicionamiento y la relevancia.",
       icon: "/icons/SEOIcon.svg",
     },
     {
-      title: t("card6.title"),
-      description: t("card6.description"),
-
+      title: "Embudos de Venta",
+      description: "Diseña estrategias efectivas de embudo de ventas para aumentar el reconocimiento de marca y las conversiones. Impulsamos el crecimiento empresarial.",
       icon: "/icons/SalesICON.svg",
     },
   ]
@@ -59,8 +52,8 @@ const Services = () => {
         className="absolute w-full h-full rounded-full xxl:bg-circle-gradient-xl bg-circle-gradient-xxl xxl:xs:bg-circle-gradient-small"
       />
       <Title
-        title={t("title")}
-        highlight={t("title2")}
+        title="Nuestros"
+        highlight="servicios"
         order="first"
         className="text-5xl font-semibold text-white text-center my-12"
       />

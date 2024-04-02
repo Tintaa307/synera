@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import Title from '../ui/Title'
 import Presentation from './Presentation'

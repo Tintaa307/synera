@@ -10,11 +10,10 @@ import axios from "axios"
 import { useTranslations } from "next-intl"
 
 const Contact = () => {
-  const t = useTranslations("Contact")
   const inputs = [
-    { type: "text", placeholder: t("input1.placeholder"), name: "name" },
-    { type: "email", placeholder: t("input2.placeholder"), name: "email" },
-    { type: "tel", placeholder: t("input3.placeholder"), name: "phone" },
+    { type: "text", placeholder: "Nombre completo...", name: "name" },
+    { type: "email", placeholder: "Correo electrónico...", name: "email" },
+    { type: "tel", placeholder: "Teléfono...", name: "phone" },
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -62,10 +61,10 @@ const Contact = () => {
           <div className="w-1/2 h-max flex items-center justify-center flex-col gap-12 xl:w-full">
             <header className="w-full h-max flex sm:items-center items-center justify-center flex-col gap-2">
               <h4 className="text-white/90 text-3xl font-normal">
-                {t("subtitle")}
+                Hablemos un poco
               </h4>
               <p className="text-white/60 text-sm font-normal  text-center">
-                {t("description")}
+                Deja una solicitud y te contactaremos para aclarar detalles.
               </p>
             </header>
             <form
@@ -77,7 +76,7 @@ const Contact = () => {
                 <Input key={index} {...input} />
               ))}
               <textarea
-                placeholder={t("input4.placeholder")}
+                placeholder="Escribe un mensaje..."
                 rows={5}
                 cols={5}
                 name="message"
@@ -88,7 +87,7 @@ const Contact = () => {
                 type="submit"
                 className="w-2/3 h-12 bg-[#070707] rounded-md text-white text-sm border-[1px] border-white/20 font-normal outline-none hover:border-white/60 transition-colors duration-200 mb-12 sm:w-full"
               >
-                {t("button")}
+                Enviar mensaje
               </button>
             </form>
           </div>

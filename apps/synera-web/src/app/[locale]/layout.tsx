@@ -30,15 +30,11 @@ export default function RootLayout({
   children: React.ReactNode
   params: { locale: string }
 }>) {
-  const messages = useMessages()
   return (
     <html lang={locale} translate="no">
       <body className={workSans.className}>
-        <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          {children}
-          <Lang />
-        </NextIntlClientProvider>
+        <Navbar />
+        {children}
         <Footer />
       </body>
     </html>

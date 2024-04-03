@@ -16,6 +16,7 @@
     "axios": "^1.6.7",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.8",
+    "million": "^3.0.6",
     "next": "14.1.2",
     "next-intl": "^3.9.4",
     "nodemailer": "^6.9.11",

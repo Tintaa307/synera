@@ -1,14 +1,12 @@
 "use client"
-
 import React from "react"
-import Title from "../ui/Title"
 import Input from "./Input"
 import { Toaster, toast } from "sonner"
 import { ContactSchema } from "@/lib/validations/Schema"
 import { z } from "zod"
 import axios from "axios"
-import { useTranslations } from "next-intl"
 
+// million-ignore
 const Contact = () => {
   const inputs = [
     { type: "text", placeholder: "Nombre completo...", name: "name" },
@@ -28,7 +26,6 @@ const Contact = () => {
 
     try {
       const result = ContactSchema.parse(values)
-
       await axios
         .post("/api/contact", result)
         .then(() => {

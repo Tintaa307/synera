@@ -9,7 +9,7 @@ type ServiceProps = {
   className?: string
   index: number
 }
-
+// million-ignore
 const Card = ({ description, icon, title, className }: ServiceProps) => {
   return (
     <article

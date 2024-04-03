@@ -1,14 +1,13 @@
 "use client"
-
 import React, { useState } from "react"
 import Item from "./Item"
 import Link from "next/link"
 import { BarsIcon } from "../icons/BarsIcon"
 import { cn } from "@/lib/utils"
 import { SyneraIcon } from "../icons/SyneraIcon"
-import { useTranslations } from "next-intl"
-import Button from "../ui/Button"
 
+
+// million-ignore
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const arrItems = [

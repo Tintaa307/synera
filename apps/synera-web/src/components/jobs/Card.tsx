@@ -19,6 +19,7 @@ type JobsProps = {
   index?: number
 }
 
+// million-ignore
 const Card = ({
   description,
   image,

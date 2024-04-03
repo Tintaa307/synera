@@ -1,6 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 
+// million-ignore
 const variants = {
   closed: {
     d: "M4 8l16 0 M4 16l16 0",
@@ -13,7 +14,7 @@ const variants = {
 const Path = (props: any) => (
   <motion.path fill="none" stroke="#fff" {...props} />
 )
-
+// million-ignore
 export const BarsIcon = ({
   isOpen,
   setIsOpen,

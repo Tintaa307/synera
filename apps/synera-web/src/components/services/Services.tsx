@@ -1,9 +1,5 @@
-"use client"
-
 import React from "react"
 import Card from "./Card"
-import { motion } from "framer-motion"
-import { cn } from "@/lib/utils"
 import Title from "../ui/Title"
 
 const Services = () => {
@@ -43,12 +39,9 @@ const Services = () => {
   return (
     <section
       id="Services"
-      className={cn(
-        "w-full min-h-screen flex justify-center items-center gap-10 mt-24 xs:mt-0 flex-col"
-      )}
+      className="w-full min-h-screen flex justify-center items-center gap-10 mt-24 xs:mt-0 flex-col"
     >
-      <motion.div
-
+      <div
         className="absolute w-full h-full rounded-full xxl:bg-circle-gradient-xl bg-circle-gradient-xxl xxl:xs:bg-circle-gradient-small"
       />
       <Title

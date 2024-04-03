@@ -2,6 +2,7 @@ import React from "react"
 import Card from "./Card"
 import Title from "../ui/Title"
 
+// million-ignore 
 const Jobs = () => {
   const JobsArr = [
     {

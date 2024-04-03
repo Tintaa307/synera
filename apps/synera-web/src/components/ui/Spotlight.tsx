@@ -6,6 +6,7 @@ type SpotlightProps = {
   fill?: string
 }
 
+// million-ignore
 export const Spotlight = ({ className, fill }: SpotlightProps) => {
   return (
     <svg

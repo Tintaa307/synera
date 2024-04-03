@@ -11,7 +11,7 @@ const About = () => {
       name: "Valentín Gonzalez",
       image: "/images/valentin-image.svg",
       alt: "image-valentin",
-      role: "Desarrollador Fullstack - CoFounder",
+      role: "Desarrollador Fullstack",
       social: [
         {
           title: "Linkedin",
@@ -24,7 +24,7 @@ const About = () => {
       name: "Bruno Mendiburu",
       image: "/images/bruno-image.svg",
       alt: "image-bruno",
-      role: "Diseñador UX/UI - CoFounder",
+      role: "Diseñador UX/UI",
       social: [
         {
           title: "Linkedin",
@@ -37,7 +37,7 @@ const About = () => {
       name: "Tomas Lami Guralnik",
       image: "/images/tomas-image.svg",
       alt: "image-tomas",
-      role: "Desarrollador Fullstack - CoFounder",
+      role: "Desarrollador Fullstack",
       social: [
         {
           title: "Linkedin",

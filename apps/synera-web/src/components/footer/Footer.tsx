@@ -7,10 +7,9 @@ import {
   RiTwitterXFill,
 } from "@remixicon/react"
 import { IconPhoneCall } from "@tabler/icons-react"
-import { useTranslations } from "next-intl"
 
+// million-ignore
 const Footer = () => {
-  const t = useTranslations("Footer")
   const socialMedia = [
     {
       name: "Instagram",
@@ -40,7 +39,7 @@ const Footer = () => {
                 Buenos Aires, Argentina.
               </small>
               <small className="text-white/60 text-sm font-normal">
-                {t("small")}
+                Equipo Synera #develop.
               </small>
             </div>
             <ul className="flex flex-row gap-5">
@@ -82,12 +81,12 @@ const Footer = () => {
             </ul>
           </section>
           <section className="w-1/2 md:w-full h-max md:h-1/2 flex items-center justify-center flex-col gap-4 md:order-1">
-            <h2 className="text-white text-[22px] font-normal">{t("title")}</h2>
+            <h2 className="text-white text-[22px] font-normal">Si te gustó lo que viste.</h2>
             <Link
               href="https://calendly.com/synera-app"
               className="text-base font-normal h-14 group w-max px-4 text-white/80 bg-[#070707] border-[1px] border-white/20 rounded-md flex items-center justify-center gap-2 hover:bg-[#090909] transition-colors duration-200 "
             >
-              {t("button")}{" "}
+              Reservá una llamada{" "}
               <IconPhoneCall
                 size={20}
                 className="text-primary group-hover:animate-wiggle  transition-colors duration-200"
@@ -97,7 +96,7 @@ const Footer = () => {
         </div>
         <div className="w-full h-max flex items-center justify-center border-t-[1px] border-white/20">
           <small className="text-white/60 text-sm font-normal my-4">
-            {t("rights")}
+            © 2024 Synera. Todos los derechos reservados.
           </small>
         </div>
       </div>

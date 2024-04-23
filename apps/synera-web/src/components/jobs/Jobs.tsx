@@ -1,30 +1,27 @@
-"use client"
-
 import React from "react"
 import Card from "./Card"
 import Title from "../ui/Title"
-import { useTranslations } from "next-intl"
 
+// million-ignore 
 const Jobs = () => {
-  const t = useTranslations("LastJobs")
   const JobsArr = [
     {
-      title: t("card1.title"),
-      description: t("card1.description"),
+      title: "Clínica Génesis",
+      description: "Sitio web de la Clínica Génesis: una página de aterrizaje simplificada para acceder a diferentes sucursales y profesionales.",
       image: "/images/Genesis.svg",
       link: "https://www.consultoriogenesis.com/",
       items: ["Website", "UX/UI", "Frontend"],
     },
     {
-      title: t("card2.title"),
-      description: t("card2.description"),
+      title: "Aplicación Web - Pillwise",
+      description: "La aplicación oficial de PillWise, un recordatorio para personas mayores de tomar sus medicamentos y hacer un seguimiento de ellos.",
       image: "/images/Pillwise.svg",
       link: "",
       items: ["Web/App", "UX/UI", "Frontend"],
     },
     {
-      title: t("card3.title"),
-      description: t("card3.description"),
+      title: "Portafolio web",
+      description: "Portafolio personal de Valentín González, mostrando varios proyectos y tecnologías muy recientes y utilizadas para un desarrollo óptimo.",
       image: "/images/TintaPortfolio.svg",
       link: "https://valentin-portfolio.vercel.app/",
       items: ["Website", "UX/UI", "Frontend"],
@@ -38,8 +35,8 @@ const Jobs = () => {
     >
       <div className="w-[90%] lg:w-full h-full flex justify-center items-center flex-col xs:gap-3">
         <Title
-          title={t("title2")}
-          highlight={t("title")}
+          title="trabajos"
+          highlight="Últimos"
           order="second"
           className="text-5xl font-semibold text-white text-center my-12"
         />

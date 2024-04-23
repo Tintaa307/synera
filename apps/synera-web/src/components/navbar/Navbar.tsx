@@ -1,33 +1,31 @@
 "use client"
-
 import React, { useState } from "react"
 import Item from "./Item"
 import Link from "next/link"
 import { BarsIcon } from "../icons/BarsIcon"
 import { cn } from "@/lib/utils"
 import { SyneraIcon } from "../icons/SyneraIcon"
-import { useTranslations } from "next-intl"
-import Button from "../ui/Button"
 
+
+// million-ignore
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const t = useTranslations("Navbar")
   const arrItems = [
     {
-      title: t("item1"),
+      title: "Servicios",
       link: "#Services",
     },
     {
-      title: t("item2"),
+      title: "Proyectos",
       link: "#Jobs",
     },
     {
-      title: t("item3"),
+      title: "Nosotros",
       link: "#About",
     },
 
     {
-      title: t("item5"),
+      title: "Contacto",
       link: "#Contact",
     },
   ]
@@ -46,9 +44,6 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="w-2/3 h-full flex justify-end items-center gap-2">
-          {/* <Button className="w-24 h-12 bg-white text-black font-semibold rounded-3xl">
-            Service
-          </Button> */}
           <ul className="w-full h-[60%] flex items-center justify-between flex-row md:hidden  rounded-3xl">
             {arrItems.map((item, index) => (
               <Item key={index} title={item.title} url={item.link} />

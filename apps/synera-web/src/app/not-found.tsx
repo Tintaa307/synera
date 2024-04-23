@@ -6,7 +6,7 @@ import React from "react"
 export default function NotFound() {
   return (
     <html>
-      <body className="bg-black w-full h-screen flex items-center justify-center">
+      <body className="bg-black w-full h-screen flex items-center justify-center flex-col">
         <Background
           bg_types="grid"
           className="h-full w-full flex items-center justify-center bg-box-gradient"

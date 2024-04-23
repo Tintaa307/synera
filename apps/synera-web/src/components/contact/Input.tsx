@@ -5,7 +5,6 @@ type InputProps = {
   placeholder: string
   name: string
 }
-
 const Input = ({ placeholder, type, name }: InputProps) => {
   return (
     <input

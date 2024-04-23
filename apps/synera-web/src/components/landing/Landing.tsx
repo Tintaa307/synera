@@ -7,11 +7,10 @@ import { IconCalendarPlus } from "@tabler/icons-react"
 import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 import Background from "../ui/Backgrounds"
-import { useTranslations } from "next-intl"
 
+// million-ignore
 const Landing = () => {
   const router = useRouter()
-  const t = useTranslations("Hero")
   return (
     <main id="Home" className="w-full h-screen">
       <Background
@@ -32,21 +31,21 @@ const Landing = () => {
           >
             <div className="flex flex-col xs:gap-1">
               <h1 className="w-full h-[65px] text-7xl xxl:text-6xl md:lg:text-5xl sm:md:xxl:text-4xl ls:sm:md:xxl:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                {t("title")}
+                Convierte tus sueños en realidad
               </h1>
               <h1 className="w-full h-[65px] text-7xl xxl:text-6xl md:lg:text-5xl sm:md:xxl:text-4xl ls:sm:md:xxl:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                {t("title2")}
+                a través de un sitio web
               </h1>
             </div>
             <p className="text-white/70 text-lg xs:text-sm w-1/2 lg:w-3/4 md:lg:w-[95%] sm:text-base">
-              {t("description")}
+              En Synera, ofrecemos servicios de alta calidad para la creación o escalado de tus proyectos. Además, nos especializamos en fomentar relaciones sólidas con nuestros clientes.
             </p>
             <div className="flex flex-row w-full items-center justify-center h-max gap-12 xs:pt-5">
               <Button
                 action={() => router.push("https://calendly.com/synera-app")}
                 className="text-base font-normal h-14 group w-max px-4"
               >
-                {t("button")}{" "}
+                Reservá una llamada{" "}
                 <IconCalendarPlus
                   size={20}
                   strokeWidth={1.5}

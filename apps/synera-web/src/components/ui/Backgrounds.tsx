@@ -130,6 +130,7 @@ const Col = ({
   )
 }
 
+// million-ignore
 const Background = ({
   children,
   bg_types,
@@ -160,7 +161,6 @@ const Background = ({
   }, [boxRef.current, boxRef.current?.offsetHeight])
 
   useEffect(() => {
-    console.log("boxWidth", boxWidth)
   }, [boxWidth])
 
   useEffect(() => {

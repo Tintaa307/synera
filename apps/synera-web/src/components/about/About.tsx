@@ -1,20 +1,17 @@
-"use client"
 
 import React from "react"
 import Presentation from "./Presentation"
 import Information from "./Information"
 import Background from "../ui/Backgrounds"
 import Title from "../ui/Title"
-import { useTranslations } from "next-intl"
 
 const About = () => {
-  const t = useTranslations("About")
   const aboutArr = [
     {
       name: "Valentín Gonzalez",
       image: "/images/valentin-image.svg",
       alt: "image-valentin",
-      role: t("card1.role"),
+      role: "Desarrollador Fullstack",
       social: [
         {
           title: "Linkedin",
@@ -27,7 +24,7 @@ const About = () => {
       name: "Bruno Mendiburu",
       image: "/images/bruno-image.svg",
       alt: "image-bruno",
-      role: t("card2.role"),
+      role: "Diseñador UX/UI",
       social: [
         {
           title: "Linkedin",
@@ -40,7 +37,7 @@ const About = () => {
       name: "Tomas Lami Guralnik",
       image: "/images/tomas-image.svg",
       alt: "image-tomas",
-      role: t("card3.role"),
+      role: "Desarrollador Fullstack",
       social: [
         {
           title: "Linkedin",
@@ -58,8 +55,8 @@ const About = () => {
     >
       <div className="w-[90%] h-max flex items-center justify-center flex-col md:w-full">
         <Title
-          title={t("title")}
-          highlight={t("title2")}
+          title="Sobre"
+          highlight="nosotros"
           order="first"
           className="text-5xl font-semibold text-white text-center my-12"
         />
@@ -89,15 +86,3 @@ const About = () => {
 }
 
 export default About
-
-{
-  /* <Background
-bg_types="dots"
-animated
-className="w-full h-max flex flex-row items-center justify-between "
->
-{aboutArr.map((item, index) => (
-  <Presentation key={index} image={item.image} alt={item.alt} />
-))}
-</Background> */
-}

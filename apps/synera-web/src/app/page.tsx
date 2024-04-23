@@ -1,6 +1,18 @@
-import { redirect } from "next/navigation"
-import React from "react"
+import About from "@/components/about/About"
+import Contact from "@/components/contact/Contact"
+import Jobs from "@/components/jobs/Jobs"
+import Landing from "@/components/landing/Landing"
+import Services from "@/components/services/Services"
 
-export default function RootPage() {
-  redirect("/es")
+export default function Home() {
+  return (
+    <>
+      <Landing />
+      <Services />
+      <Jobs />
+      <About />
+      {/* <Testimonials /> */}
+      <Contact />
+    </>
+  )
 }

@@ -1,5 +1,4 @@
 "use client"
-
 import Link from "next/link"
 import React, { useState } from "react"
 import { motion, useMotionValueEvent, useScroll } from "framer-motion"
@@ -14,6 +13,7 @@ type ItemProps = {
   index?: number
 }
 
+// million-ignore
 const Item = ({
   title,
   url,
@@ -26,7 +26,6 @@ const Item = ({
   const [scroll, setScroll] = useState(0)
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log("Page scroll: ", latest)
     setScroll(latest)
   })
   return (

@@ -7,10 +7,9 @@ type IconProps = {
   width?: string
   height?: string
 }
-
+// million-ignore
 export const SyneraIcon = ({ className, width, height }: IconProps) => {
   return (
-    // <div className="flex justify-center items-center flex-col">
     <svg
       width="45"
       height="50"
@@ -115,9 +114,6 @@ export const SyneraIcon = ({ className, width, height }: IconProps) => {
         fill="white"
       />
     </svg>
-    /* <small className="text-white text-xs font-normal text-start mr-1">
-      Synera
-    </small>
-  </div> */
+
   )
 }

@@ -16,6 +16,7 @@ type InformationProps = {
   className?: string
 }
 
+// million-ignore
 const Information = ({ item, index, className }: InformationProps) => {
   const router = useRouter()
   return (

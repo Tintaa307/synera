@@ -1,7 +1,6 @@
 "use client"
 
 import React from "react"
-import Title from "../ui/Title"
 import Input from "./Input"
 import { Toaster, toast } from "sonner"
 import { ContactSchema } from "@/lib/validations/Schema"
@@ -31,7 +30,7 @@ const Contact = () => {
       const result = ContactSchema.parse(values)
 
       await axios
-        .post("/api/contact", result)
+        .post("/api/emails", result)
         .then(() => {
           toast.success("Message sent successfully")
         })

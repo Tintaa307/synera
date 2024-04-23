@@ -43,6 +43,7 @@ const config: Config = {
         "circle-gradient-small":
           "radial-gradient(circle 175px at 50% 56%, #84E9FF 0%, transparent 100%)",
         "card-gradient": "linear-gradient(to left top,#040404 60%,#111111);",
+        "email-gradient": "linear-gradient(to right,#12648E 10%,#001926);",
       },
       boxShadow: {
         gradient:

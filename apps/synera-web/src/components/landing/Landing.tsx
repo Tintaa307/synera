@@ -31,7 +31,7 @@ const Landing = () => {
           >
             <div className="flex flex-col xs:gap-1">
               <h1 className="w-full h-[65px] text-7xl xxl:text-6xl md:lg:text-5xl sm:md:xxl:text-4xl ls:sm:md:xxl:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                Convierte tus sueños en realidad
+                Convierte tus objetivos en realidad
               </h1>
               <h1 className="w-full h-[65px] text-7xl xxl:text-6xl md:lg:text-5xl sm:md:xxl:text-4xl ls:sm:md:xxl:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
                 a través de un sitio web

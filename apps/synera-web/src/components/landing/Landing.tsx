@@ -30,7 +30,7 @@ const Landing = () => {
             className="w-5/6 xs:w-full h-max flex flex-col gap-6 xs:gap-4 items-center justify-center text-center px-3"
           >
             <div className="">
-              <h1 className="w-full h-[65px] text-7xl xxl:text-6xl md:lg:text-5xl sm:md:xxl:text-4xl ls:sm:md:xxl:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 flex justify-center items-center flex-col gap-3">
+              <h1 className="w-full h-max text-7xl xxl:text-6xl md:lg:text-5xl sm:md:xxl:text-4xl ls:sm:md:xxl:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 flex justify-center items-center flex-col gap-3">
                 <span>Convierte tus objetivos en realidad</span>
                 <span>a través de un sitio web</span>
               </h1>

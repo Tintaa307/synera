@@ -8,7 +8,6 @@ import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 import Background from "../ui/Backgrounds"
 
-// million-ignore
 const Landing = () => {
   const router = useRouter()
   return (

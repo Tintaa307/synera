@@ -19,7 +19,7 @@ const Landing = () => {
       >
         <section className="h-screen w-full antialiased flex items-center justify-center">
           <Spotlight
-            className="-top-40 left-0 xl:-left-40 xl:-top-28 lg:xl:-top-16 ms:lg:xl:top-2 ms:lg:xl:-left-6  ls:ms:lg:xl:top-24 ls:ms:lg:xl:left-24"
+            className="-top-40 left-0 xl:-left-40 xl:-top-28 lg:xl:-top-16 ms:lg:xl:top-2 ms:lg:xl:-left-6 ls:ms:lg:xl:top-24 ls:ms:lg:xl:left-24"
             fill="#84E9FF"
           />
           <motion.div
@@ -29,7 +29,7 @@ const Landing = () => {
             className="w-5/6 xs:w-full h-max flex flex-col gap-6 xs:gap-4 items-center justify-center text-center px-3"
           >
             <div className="">
-              <h1 className="w-full h-max text-7xl xxl:text-6xl md:xxl:text-5xl sm:md:xxl:text-4xl ls:sm:md:xxl:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 flex justify-center items-center flex-col gap-3">
+              <h1 className="w-full h-max text-7xl xxl:text-6xl xl:gap-0 md:xxl:text-5xl sm:md:xxl:text-4xl ls:sm:md:xxl:text-3xl sm:xs:leading-10 font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 flex justify-center items-center flex-col gap-3">
                 <span>Convierte tus objetivos en realidad</span>
                 <span>a través de un sitio web</span>
               </h1>

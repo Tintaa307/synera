@@ -90,7 +90,7 @@ const About = () => {
           className="text-5xl font-semibold text-white text-center my-12"
         />
 
-        <div className="h-max 3xl:w-full sm:card:3xl:w-[90%] card:3xl:w-[95%]">
+        <div className="h-max w-[90%] 3xl:w-full sm:card:3xl:w-[90%] card:3xl:w-[95%]">
           <Carousel>
             <CarouselContent className="flex flex-row">
               {aboutArr.map((item, index) => (

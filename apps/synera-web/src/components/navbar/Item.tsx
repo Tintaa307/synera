@@ -57,7 +57,11 @@ const Item = ({
         href={url}
       >
         {title}
-        <div className={cn("w-[400px] h-[1px] bg-white/10 xs:w-[330px]")} />
+        <div
+          className={cn(
+            "md:w-[400px] md:h-[1px] md:bg-white/10 xs:md:w-[330px] hidden"
+          )}
+        />
       </Link>
     </motion.li>
   )

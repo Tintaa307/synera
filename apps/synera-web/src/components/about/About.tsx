@@ -53,13 +53,13 @@ const About = () => {
       name: "Nicolas Nuñez",
       image: "/images/nico-img.svg",
       alt: "image-nicolas",
-      role: "Closer de ventas",
+      role: "Cierre de ventas",
       social: [
         {
           title: "Linkedin",
-          url: "https://www.linkedin.com/in/tomaslami/",
+          url: "https://www.linkedin.com/in/nicolas-nuñez-631ba127a/",
         },
-        { title: "Cv", url: "https://github.com/tomaslami" },
+        { title: "Cv", url: "#" },
       ],
     },
     {

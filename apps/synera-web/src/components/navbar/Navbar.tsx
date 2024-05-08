@@ -82,7 +82,7 @@ const Navbar = () => {
       </nav>
       <aside
         className={cn(
-          "fixed top-0 left-0 w-full h-[100dvh] bg-black hidden md:flex -translate-x-full transition-all duration-500 xl:items-center xl:justify-center",
+          "fixed top-0 left-0 w-full h-screen bg-black hidden md:flex -translate-x-full transition-all duration-500 xl:items-center xl:justify-center",
           {
             "translate-x-0 transition-all duration-500": isOpen,
           }

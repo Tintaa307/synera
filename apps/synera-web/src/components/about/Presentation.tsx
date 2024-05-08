@@ -21,7 +21,7 @@ const Presentation = ({
   social,
 }: PresentationProps) => {
   return (
-    <CarouselItem className="basis-1/3 flex items-center justify-center card:basis-1/2 sm:card:basis-full">
+    <CarouselItem className="basis-1/3 flex items-center justify-center card:basis-1/2 sm:card:basis-full hover:cursor-grab">
       <div className="relative w-full z-10 gap-8 bg-card-gradient px-12 py-10 rounded-[31px] flex items-center justify-center flex-col border-white/20 border-[1px] sm:w-2/3 ls:sm:w-3/4 xs:ls:sm:w-full">
         <header className="w-full h-max flex flex-col items-center justify-center gap-3">
           <h4

@@ -53,7 +53,7 @@ const About = () => {
       name: "Nicolas Nuñez",
       image: "/images/nico-img.svg",
       alt: "image-nicolas",
-      role: "Cierre de ventas",
+      role: "Cierre De Ventas",
       social: [
         {
           title: "Linkedin",

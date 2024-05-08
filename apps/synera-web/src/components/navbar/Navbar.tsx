@@ -1,5 +1,7 @@
 "use client"
+
 import React, { useState } from "react"
+import { motion } from "framer-motion"
 import Item from "./Item"
 import Link from "next/link"
 import { BarsIcon } from "../icons/BarsIcon"
@@ -102,15 +104,25 @@ const Navbar = () => {
             ))}
           </ul>
           <section className="w-1/2 md:w-full h-full md:h-1/2 flex items-center justify-center flex-col gap-4 md:order-2">
-            <div className="absolute bottom-24 flex flex-col">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, type: "tween", delay: 0.8 }}
+              className="absolute bottom-24 flex flex-col"
+            >
               <small className="text-white/60 text-sm font-normal">
                 Buenos Aires, Argentina.
               </small>
               <small className="text-white/60 text-sm font-normal">
                 Equipo Synera #develop.
               </small>
-            </div>
-            <ul className="absolute bottom-12 flex flex-row gap-5">
+            </motion.div>
+            <motion.ul
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, type: "tween", delay: 0.8 }}
+              className="absolute bottom-12 flex flex-row gap-5"
+            >
               {socialMedia.map((social, index) => (
                 <li key={index}>
                   <Link
@@ -146,7 +158,7 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-            </ul>
+            </motion.ul>
           </section>
         </div>
       </aside>

@@ -59,7 +59,7 @@ const Item = ({
         {title}
         <div
           className={cn(
-            "md:w-[400px] md:h-[1px] md:bg-white/10 xs:md:w-[330px] hidden"
+            "md:block md:w-[400px] md:h-[1px] md:bg-white/10 xs:md:w-[330px] hidden"
           )}
         />
       </Link>

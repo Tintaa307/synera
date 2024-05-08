@@ -1,9 +1,6 @@
-"use client"
-
 import Image from "next/image"
 import React from "react"
 import Information from "./Information"
-import { motion } from "framer-motion"
 import { CarouselItem } from "../ui/carousel"
 
 type PresentationProps = {
@@ -25,13 +22,7 @@ const Presentation = ({
 }: PresentationProps) => {
   return (
     <CarouselItem className="basis-1/3 flex items-center justify-center card:basis-1/2 sm:card:basis-full">
-      <motion.div
-        initial={{ opacity: 0, y: -40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, type: "tween", delay: index * 0.1 }}
-        viewport={{ once: true }}
-        className="relative w-full z-10 gap-8 bg-card-gradient px-12 py-10 rounded-[31px] flex items-center justify-center flex-col border-white/20 border-[1px] sm:w-2/3 ls:sm:w-3/4 xs:ls:sm:w-full"
-      >
+      <div className="relative w-full z-10 gap-8 bg-card-gradient px-12 py-10 rounded-[31px] flex items-center justify-center flex-col border-white/20 border-[1px] sm:w-2/3 ls:sm:w-3/4 xs:ls:sm:w-full">
         <header className="w-full h-max flex flex-col items-center justify-center gap-3">
           <h4
             key={index}
@@ -57,7 +48,7 @@ const Presentation = ({
             <Information key={index} item={item} index={index} />
           ))}
         </footer>
-      </motion.div>
+      </div>
     </CarouselItem>
   )
 }

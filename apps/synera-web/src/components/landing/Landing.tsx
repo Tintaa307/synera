@@ -2,7 +2,7 @@
 
 import React from "react"
 import { Spotlight } from "@/components/ui/Spotlight"
-import Button from "@/components/ui/Button"
+import Button from "@/components/button/Button"
 import { IconCalendarPlus } from "@tabler/icons-react"
 import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"

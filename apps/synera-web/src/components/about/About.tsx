@@ -1,9 +1,12 @@
-
 import React from "react"
 import Presentation from "./Presentation"
-import Information from "./Information"
-import Background from "../ui/Backgrounds"
 import Title from "../ui/Title"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const About = () => {
   const aboutArr = [
@@ -34,7 +37,7 @@ const About = () => {
       ],
     },
     {
-      name: "Tomas Lami Guralnik",
+      name: "Tomas Lami",
       image: "/images/tomas-image.svg",
       alt: "image-tomas",
       role: "Desarrollador Fullstack",
@@ -46,6 +49,32 @@ const About = () => {
         { title: "Github", url: "https://github.com/tomaslami" },
       ],
     },
+    {
+      name: "Nicolas Nuñez",
+      image: "/images/nico-img.svg",
+      alt: "image-nicolas",
+      role: "Closer de ventas",
+      social: [
+        {
+          title: "Linkedin",
+          url: "https://www.linkedin.com/in/tomaslami/",
+        },
+        { title: "Cv", url: "https://github.com/tomaslami" },
+      ],
+    },
+    {
+      name: "Facundo Lanzilotti",
+      image: "/images/facu-img-final-2.svg",
+      alt: "image-facundo",
+      role: "Marketing Digital",
+      social: [
+        {
+          title: "Linkedin",
+          url: "https://linkedin.com/in/facundo-lanzilotti/",
+        },
+        { title: "Cv", url: "/Facundo-Lanzilotti-CV.pdf" },
+      ],
+    },
   ]
 
   return (
@@ -53,33 +82,33 @@ const About = () => {
       id="About"
       className="w-full h-full flex items-center justify-center mt-24"
     >
-      <div className="w-[90%] h-max flex items-center justify-center flex-col md:w-full">
+      <div className="w-[90%] h-max flex items-center justify-center flex-col">
         <Title
           title="Sobre"
           highlight="nosotros"
           order="first"
           className="text-5xl font-semibold text-white text-center my-12"
         />
-        <Background
-          bg_types="dots"
-          animated
-          className="w-full h-max flex flex-row items-center justify-between sm:flex-col"
-        >
-          {aboutArr.map((item, index) => (
-            <Presentation
-              key={index}
-              index={index}
-              image={item.image}
-              alt={item.alt}
-              aboutArr={aboutArr}
-            />
-          ))}
-        </Background>
-        <article className="w-full flex items-center justify-between flex-row sm:hidden mt-4">
-          {aboutArr.map((item, index) => (
-            <Information key={index} item={item} index={index} />
-          ))}
-        </article>
+
+        <div className="h-max 3xl:w-full sm:card:3xl:w-[90%] card:3xl:w-[95%]">
+          <Carousel>
+            <CarouselContent className="flex flex-row">
+              {aboutArr.map((item, index) => (
+                <Presentation
+                  key={index}
+                  index={index}
+                  image={item.image}
+                  alt={item.alt}
+                  name={item.name}
+                  role={item.role}
+                  social={item.social}
+                />
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
       </div>
     </section>
   )

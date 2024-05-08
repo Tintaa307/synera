@@ -1,30 +1,16 @@
 import type { Config } from "tailwindcss"
 
-const defaultTheme = require("tailwindcss/defaultTheme")
-
-const colors = require("tailwindcss/colors")
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette")
-
-const config: Config = {
+const config = {
+  darkMode: ["class"],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
+  prefix: "",
   theme: {
     extend: {
-      screens: {
-        xs: { raw: "(max-width: 550px)" },
-        ls: { raw: "(max-width: 680px)" },
-        sm: { raw: "(max-width: 750px)" },
-        ms: { raw: "(max-width: 817px)" },
-        md: { raw: "(max-width: 930px)" },
-        lg: { raw: "(max-width: 1050px)" },
-        xl: { raw: "(max-width: 1200px)" },
-        xxl: { raw: "(max-width: 1473px)" },
-      },
       colors: {
         primary: "#84E9FF",
         gray_text: "#949CA4",
@@ -50,7 +36,32 @@ const config: Config = {
           "var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow), var(--tw-shadow-colored);",
         internal: "inset 0px 0px 80px rgba(0, 0, 0, 1)",
       },
+      screens: {
+        xs: { raw: "(max-width: 550px)" },
+        ls: { raw: "(max-width: 680px)" },
+        sm: { raw: "(max-width: 750px)" },
+        ms: { raw: "(max-width: 817px)" },
+        md: { raw: "(max-width: 930px)" },
+        card: { raw: "(max-width: 1000px)" },
+        lg: { raw: "(max-width: 1050px)" },
+        xl: { raw: "(max-width: 1200px)" },
+        xxl: { raw: "(max-width: 1473px)" },
+        "3xl": { raw: "(max-width: 1543px)" },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
       keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
         wiggle: {
           "0%, 100%": { transform: "rotate(-5deg)" },
           "50%": { transform: "rotate(5deg)" },
@@ -72,6 +83,8 @@ const config: Config = {
         },
       },
       animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
         wiggle: "wiggle 0.5s ease-in-out",
         scroll:
@@ -79,18 +92,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animation-delay")],
-}
-
-function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"))
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  )
-
-  addBase({
-    ":root": newVars,
-  })
-}
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwindcss-animation-delay"),
+  ],
+} satisfies Config
 
 export default config

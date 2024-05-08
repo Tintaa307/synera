@@ -5,7 +5,12 @@ import Link from "next/link"
 import { BarsIcon } from "../icons/BarsIcon"
 import { cn } from "@/lib/utils"
 import { SyneraIcon } from "../icons/SyneraIcon"
-
+import {
+  RiGithubFill,
+  RiInstagramLine,
+  RiLinkedinBoxFill,
+  RiTiktokFill,
+} from "@remixicon/react"
 
 // million-ignore
 const Navbar = () => {
@@ -27,6 +32,25 @@ const Navbar = () => {
     {
       title: "Contacto",
       link: "#Contact",
+    },
+  ]
+
+  const socialMedia = [
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/synerarg/",
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/company/synera-web/",
+    },
+    {
+      name: "Github",
+      url: "https://github.com/Tintaa307/synera-app",
+    },
+    {
+      name: "TikTok",
+      url: "https://www.tiktok.com/@synerarg",
     },
   ]
 
@@ -64,7 +88,7 @@ const Navbar = () => {
       >
         <div className="w-full h-[calc(100vh_-_80px)] flex items-center justify-start flex-col mt-20">
           <span className="w-[90%] h-[1px] bg-white/20" />
-          <ul className="w-[90%] h-max flex items-start justify-start flex-col gap-12 mt-12">
+          <ul className="w-[90%] h-max flex items-center justify-center flex-col gap-12 mt-12">
             {arrItems.map((item, index) => (
               <Item
                 key={index}
@@ -77,6 +101,53 @@ const Navbar = () => {
               />
             ))}
           </ul>
+          <section className="w-1/2 md:w-full h-full md:h-1/2 flex items-center justify-center flex-col gap-4 md:order-2">
+            <div className="absolute bottom-24 flex flex-col">
+              <small className="text-white/60 text-sm font-normal">
+                Buenos Aires, Argentina.
+              </small>
+              <small className="text-white/60 text-sm font-normal">
+                Equipo Synera #develop.
+              </small>
+            </div>
+            <ul className="absolute bottom-12 flex flex-row gap-5">
+              {socialMedia.map((social, index) => (
+                <li key={index}>
+                  <Link
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/60 text-sm font-normal"
+                  >
+                    {social.name === "Instagram" && (
+                      <RiInstagramLine
+                        size={26}
+                        className="text-white/80 cursor-pointer hover:text-primary transition-colors duration-200"
+                      />
+                    )}
+                    {social.name === "LinkedIn" && (
+                      <RiLinkedinBoxFill
+                        size={26}
+                        className="text-white/80 cursor-pointer hover:text-primary transition-colors duration-200"
+                      />
+                    )}
+                    {social.name === "Github" && (
+                      <RiGithubFill
+                        size={26}
+                        className="text-white/80 cursor-pointer hover:text-primary transition-colors duration-200"
+                      />
+                    )}
+                    {social.name === "TikTok" && (
+                      <RiTiktokFill
+                        size={26}
+                        className="text-white/80 cursor-pointer hover:text-primary transition-colors duration-200"
+                      />
+                    )}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         </div>
       </aside>
     </header>

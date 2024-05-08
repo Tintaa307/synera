@@ -4,7 +4,7 @@ import {
   RiInstagramLine,
   RiLinkedinBoxFill,
   RiGithubFill,
-  RiTwitterXFill,
+  RiTiktokFill,
 } from "@remixicon/react"
 import { IconPhoneCall } from "@tabler/icons-react"
 
@@ -13,19 +13,19 @@ const Footer = () => {
   const socialMedia = [
     {
       name: "Instagram",
-      url: "https://www.instagram.com/synera.team/",
+      url: "https://www.instagram.com/synerarg/",
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/company/synera-team/",
+      url: "https://www.linkedin.com/company/synera-web/",
     },
     {
       name: "Github",
       url: "https://github.com/Tintaa307/synera-app",
     },
     {
-      name: "Twitter",
-      url: "https://www.twitter.com/synera.team/",
+      name: "TikTok",
+      url: "https://www.tiktok.com/@synerarg",
     },
   ]
 
@@ -69,8 +69,8 @@ const Footer = () => {
                         className="text-white/80 cursor-pointer hover:text-primary transition-colors duration-200"
                       />
                     )}
-                    {social.name === "Twitter" && (
-                      <RiTwitterXFill
+                    {social.name === "TikTok" && (
+                      <RiTiktokFill
                         size={26}
                         className="text-white/80 cursor-pointer hover:text-primary transition-colors duration-200"
                       />
@@ -81,7 +81,9 @@ const Footer = () => {
             </ul>
           </section>
           <section className="w-1/2 md:w-full h-max md:h-1/2 flex items-center justify-center flex-col gap-4 md:order-1">
-            <h2 className="text-white text-[22px] font-normal">Si te gustó lo que viste.</h2>
+            <h2 className="text-white text-[22px] font-normal">
+              Si te gustó lo que viste.
+            </h2>
             <Link
               href="https://calendly.com/synera-app"
               className="text-base font-normal h-14 group w-max px-4 text-white/80 bg-[#070707] border-[1px] border-white/20 rounded-md flex items-center justify-center gap-2 hover:bg-[#090909] transition-colors duration-200 "

@@ -15,6 +15,7 @@
     "@remixicon/react": "^4.2.0",
     "@repo/ui": "workspace:*",
     "@tabler/icons-react": "^2.47.0",
+    "@vercel/analytics": "^1.2.2",
     "axios": "^1.6.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",

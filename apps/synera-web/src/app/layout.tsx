@@ -4,6 +4,7 @@ import "./globals.css"
 import Navbar from "@/components/navbar/Navbar"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import Footer from "@/components/footer/Footer"
+import { Analytics } from "@vercel/analytics/react"
 
 const workSans = Work_Sans({ subsets: ["latin"] })
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Footer />
       </body>
       <GoogleAnalytics gaId="G-LYKZTJNP92" />
+      <Analytics />
     </html>
   )
 }

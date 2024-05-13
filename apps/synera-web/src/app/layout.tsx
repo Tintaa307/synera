@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "At Synera, we provide high-quality services for the creation or scaling of your projects. Additionally, we specialize in fostering strong client relationships.",
   keywords:
-    "Synera, software, development, web, mobile, design, consulting, services, projects, client, relationships, agency, company, business, technology, innovation, creativity, quality, experience, expertise, team, professionals, experts, solutions, digital, transformation, growth, success, strategy, development, design, consulting, services, projects, client, relationships, agency, company, business, technology, innovation, creativity, quality, experience, expertise, team, professionals, experts, solutions, digital, transformation, growth, success, strategy",
+    "Synera, synera, synera digital agency, sinera, sinergia, software, development, web, mobile, design, consulting, services, projects, client, relationships, agency, company, business, technology, innovation, creativity, quality, experience, expertise, team, professionals, experts, solutions, digital, transformation, growth, success, strategy, development, design, consulting, services, projects, client, relationships, agency, company, business, technology, innovation, creativity, quality, experience, expertise, team, professionals, experts, solutions, digital, transformation, growth, success, strategy",
   icons: [
     {
       rel: "icon",
@@ -29,10 +29,6 @@ export default function RootLayout({
 }>) {
   return (
     <html translate="no">
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-LYKZTJNP92"
-      />
       <body className={workSans.className}>
         <Navbar />
         {children}

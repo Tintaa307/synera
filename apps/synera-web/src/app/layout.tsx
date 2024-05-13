@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/Navbar"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import Footer from "@/components/footer/Footer"
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const workSans = Work_Sans({ subsets: ["latin"] })
 
@@ -37,6 +38,7 @@ export default function RootLayout({
       </body>
       <GoogleAnalytics gaId="G-LYKZTJNP92" />
       <Analytics />
+      <SpeedInsights />
     </html>
   )
 }

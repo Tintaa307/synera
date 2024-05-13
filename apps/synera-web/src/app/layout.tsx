@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Work_Sans } from "next/font/google"
 import "./globals.css"
 import Navbar from "@/components/navbar/Navbar"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import Footer from "@/components/footer/Footer"
 
 const workSans = Work_Sans({ subsets: ["latin"] })
@@ -28,11 +29,16 @@ export default function RootLayout({
 }>) {
   return (
     <html translate="no">
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-LYKZTJNP92"
+      />
       <body className={workSans.className}>
         <Navbar />
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-LYKZTJNP92" />
     </html>
   )
 }

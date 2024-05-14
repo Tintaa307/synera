@@ -1,4 +1,5 @@
 "use client"
+
 import Link from "next/link"
 import React, { useState } from "react"
 import { motion, useMotionValueEvent, useScroll } from "framer-motion"
@@ -9,19 +10,9 @@ type ItemProps = {
   title: string
   className?: string
   action?: () => void
-  entryAnimation?: boolean
-  index?: number
 }
 
-// million-ignore
-const Item = ({
-  title,
-  url,
-  className,
-  action,
-  entryAnimation,
-  index,
-}: ItemProps) => {
+const Item = ({ title, url, className, action }: ItemProps) => {
   const { scrollY } = useScroll()
   const [scroll, setScroll] = useState(0)
 
@@ -29,12 +20,7 @@ const Item = ({
     setScroll(latest)
   })
   return (
-    <motion.li
-      initial={entryAnimation ? { opacity: 0, y: -20 } : {}}
-      whileInView={entryAnimation ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.4, type: "tween", delay: 0.3 + index! * 0.1 }}
-      className="group"
-    >
+    <li className="group">
       <Link
         onClick={action}
         className={cn(
@@ -63,7 +49,7 @@ const Item = ({
           )}
         />
       </Link>
-    </motion.li>
+    </li>
   )
 }
 

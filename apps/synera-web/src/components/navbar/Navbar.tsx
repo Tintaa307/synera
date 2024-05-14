@@ -92,11 +92,9 @@ const Navbar = () => {
             {arrItems.map((item, index) => (
               <Item
                 key={index}
-                index={index}
                 title={item.title}
                 url={item.link}
                 action={() => setIsOpen(false)}
-                entryAnimation={true}
                 className="text-white/90 text-xl"
               />
             ))}

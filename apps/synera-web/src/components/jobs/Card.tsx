@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils"
 import React from "react"
-import { motion } from "framer-motion"
 import {
   IconWorld,
   IconAppWindow,
@@ -31,7 +30,6 @@ const Card = ({
 }: JobsProps) => {
   return (
     <div
-
       className={cn(
         "w-[400px] xs:w-full h-max flex flex-col justify-center items-center bg-[#070707] rounded-2xl",
         className
@@ -76,9 +74,11 @@ const Card = ({
             {title}
           </h3>
         </div>
-        <div className={cn(
-          "w-full h-1/3 flex justify-center items-start flex-col gap-3"
-        )}>
+        <div
+          className={cn(
+            "w-full h-1/3 flex justify-center items-start flex-col gap-3"
+          )}
+        >
           <p
             className={cn(
               "text-white/60 text-start text-sm font-normal",

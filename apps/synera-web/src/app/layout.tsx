@@ -31,14 +31,14 @@ export default function RootLayout({
 }>) {
   return (
     <html translate="no">
+      <GoogleAnalytics gaId="G-LYKZTJNP92" />
+      <Analytics />
+      <SpeedInsights />
       <body className={workSans.className}>
         <Navbar />
         {children}
         <Footer />
       </body>
-      <GoogleAnalytics gaId="G-LYKZTJNP92" />
-      <Analytics />
-      <SpeedInsights />
     </html>
   )
 }

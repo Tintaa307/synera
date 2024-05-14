@@ -2,26 +2,28 @@ import React from "react"
 import Card from "./Card"
 import Title from "../ui/Title"
 
-// million-ignore 
 const Jobs = () => {
   const JobsArr = [
     {
       title: "Clínica Génesis",
-      description: "Sitio web de la Clínica Génesis: una página de aterrizaje simplificada para acceder a diferentes sucursales y profesionales.",
+      description:
+        "Sitio web de la Clínica Génesis: una página de aterrizaje simplificada para acceder a diferentes sucursales y profesionales.",
       image: "/images/Genesis.svg",
       link: "https://www.consultoriogenesis.com/",
       items: ["Website", "UX/UI", "Frontend"],
     },
     {
       title: "Aplicación Web - Pillwise",
-      description: "La aplicación oficial de PillWise, un recordatorio para personas mayores de tomar sus medicamentos y hacer un seguimiento de ellos.",
+      description:
+        "La aplicación oficial de PillWise, un recordatorio para personas mayores de tomar sus medicamentos y hacer un seguimiento de ellos.",
       image: "/images/Pillwise.svg",
       link: "",
       items: ["Web/App", "UX/UI", "Frontend"],
     },
     {
       title: "Portafolio web",
-      description: "Portafolio personal de Valentín González, mostrando varios proyectos y tecnologías muy recientes y utilizadas para un desarrollo óptimo.",
+      description:
+        "Portafolio personal de Valentín González, mostrando varios proyectos y tecnologías muy recientes y utilizadas para un desarrollo óptimo.",
       image: "/images/TintaPortfolio.svg",
       link: "https://valentin-portfolio.vercel.app/",
       items: ["Website", "UX/UI", "Frontend"],

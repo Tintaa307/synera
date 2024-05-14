@@ -1,5 +1,4 @@
 import React from "react"
-import { motion } from "framer-motion"
 import Image from "next/image"
 
 type ServiceProps = {
@@ -9,12 +8,10 @@ type ServiceProps = {
   className?: string
   index: number
 }
-// million-ignore
-const Card = ({ description, icon, title, className }: ServiceProps) => {
+
+const Card = ({ description, icon, title }: ServiceProps) => {
   return (
-    <article
-      className="w-[475px] h-[300px] xs:h-[350px] flex flex-col justify-center items-center bg-card-gradient rounded-2xl p-5 border-[0.5px] border-white/20 z-10 hover:border-white/50 transition-colors duration-200"
-    >
+    <article className="w-[475px] h-[300px] xs:h-[350px] flex flex-col justify-center items-center bg-card-gradient rounded-2xl p-5 border-[0.5px] border-white/20 z-10 hover:border-white/50 transition-colors duration-200">
       <div className="w-full h-1/2 flex justify-center items-center">
         <span className="w-[75px] h-[75px] bg-primary rounded-full opacity-50"></span>
         <div className="w-[75px] h-[75px] bg-primary rounded-full opacity-95 absolute mt-3 flex justify-center items-center z-10">

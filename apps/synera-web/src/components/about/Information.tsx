@@ -1,5 +1,3 @@
-"use client"
-
 import {
   RiBehanceFill,
   RiGithubFill,
@@ -8,6 +6,7 @@ import {
 import { useRouter } from "next/navigation"
 import React from "react"
 import { IconFileCv } from "@tabler/icons-react"
+import Link from "next/link"
 
 type InformationProps = {
   item: { title: string; url: string }
@@ -16,36 +15,39 @@ type InformationProps = {
 
 // million-ignore
 const Information = ({ item, index }: InformationProps) => {
-  const router = useRouter()
   return (
     <div key={index}>
       {item.title === "Linkedin" && (
-        <RiLinkedinBoxFill
-          onClick={() => router.push(item.url)}
-          size={40}
-          className="text-white cursor-pointer hover:text-white/70 transition-colors duration-200"
-        />
+        <Link href={item.url} target="_blank">
+          <RiLinkedinBoxFill
+            size={40}
+            className="text-white cursor-pointer hover:text-white/70 transition-colors duration-200"
+          />
+        </Link>
       )}
       {item.title === "Behance" && (
-        <RiBehanceFill
-          onClick={() => router.push(item.url)}
-          size={40}
-          className="text-white cursor-pointer hover:text-white/70 transition-colors duration-200"
-        />
+        <Link href={item.url} target="_blank">
+          <RiBehanceFill
+            size={40}
+            className="text-white cursor-pointer hover:text-white/70 transition-colors duration-200"
+          />
+        </Link>
       )}
       {item.title === "Github" && (
-        <RiGithubFill
-          onClick={() => router.push(item.url)}
-          size={40}
-          className="text-white cursor-pointer hover:text-white/70 transition-colors duration-200"
-        />
+        <Link href={item.url} target="_blank">
+          <RiGithubFill
+            size={40}
+            className="text-white cursor-pointer hover:text-white/70 transition-colors duration-200"
+          />
+        </Link>
       )}
       {item.title === "Cv" && (
-        <IconFileCv
-          onClick={() => router.push(item.url)}
-          size={40}
-          className="text-white cursor-pointer hover:text-white/70 transition-colors duration-200"
-        />
+        <Link href={item.url} target="_blank">
+          <IconFileCv
+            size={40}
+            className="text-white cursor-pointer hover:text-white/70 transition-colors duration-200"
+          />
+        </Link>
       )}
     </div>
   )

@@ -1,51 +1,16 @@
 "use client"
+
 import React from "react"
 import Input from "./Input"
-import { Toaster, toast } from "sonner"
-import { ContactSchema } from "@/lib/validations/Schema"
-import { z } from "zod"
-import axios from "axios"
+import { toast, Toaster } from "sonner"
+import { handleSubmit } from "@/actions/contact-actions"
 
-// million-ignore
 const Contact = () => {
   const inputs = [
     { type: "text", placeholder: "Nombre completo...", name: "name" },
     { type: "email", placeholder: "Correo electrónico...", name: "email" },
     { type: "tel", placeholder: "Teléfono...", name: "phone" },
   ]
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    const formData = new FormData(e.currentTarget)
-    const values = Object.fromEntries(formData.entries())
-
-    if (Object.values(values).some((value) => value === "")) {
-      toast.error("Please fill in all fields")
-      return
-    }
-
-    try {
-      const result = ContactSchema.parse(values)
-      await axios
-        .post("/api/emails", result)
-        .then(() => {
-          toast.success("Message sent successfully")
-        })
-        .catch((error) => {
-          toast.error("An error occurred, please try again later")
-          console.log(error)
-        })
-    } catch (error) {
-      if (error instanceof z.ZodError) {
-        const errors = error.errors.map((err) => err.message)
-        errors.forEach((err) => toast.error(err))
-        return
-      } else {
-        toast.error("An error occurred, please try again later")
-        console.log(error)
-      }
-    }
-  }
 
   return (
     <section
@@ -65,7 +30,22 @@ const Contact = () => {
               </p>
             </header>
             <form
-              onSubmit={handleSubmit}
+              action={async (formData) => {
+                const res = await handleSubmit(formData)
+                switch (res.status) {
+                  case 200:
+                    toast.success(res.message)
+                    break
+                  case 500:
+                    res.message.map((msg: string) =>
+                      toast.error(msg)
+                    ) as string[]
+                    break
+                  default:
+                    toast.info("Error al enviar el mensaje")
+                    break
+                }
+              }}
               autoComplete="off"
               className="w-full xl:w-2/3 h-max flex sm:items-center items-center justify-center flex-col gap-8 xl:md:w-full"
             >

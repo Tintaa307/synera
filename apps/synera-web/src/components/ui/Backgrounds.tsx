@@ -160,8 +160,7 @@ const Background = ({
     }
   }, [boxRef.current, boxRef.current?.offsetHeight])
 
-  useEffect(() => {
-  }, [boxWidth])
+  useEffect(() => {}, [boxWidth])
 
   useEffect(() => {
     if (boxHeight !== 0 && boxHeight) {

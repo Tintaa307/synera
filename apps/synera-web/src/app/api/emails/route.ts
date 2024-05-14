@@ -21,9 +21,7 @@ export async function POST(req: Request) {
 
     const { name, email, phone, message } = data
 
-    console.log(data)
-
-    const res = await resend.emails.send({
+    await resend.emails.send({
       from: "Synera Team <synera@synera.com.ar>",
       to: [
         "valentin@synera.com.ar",
@@ -42,10 +40,6 @@ export async function POST(req: Request) {
       }),
       text: "",
     })
-
-    if (res) {
-      console.log(res)
-    }
 
     return NextResponse.json({
       message: "The email was sent successfully.",

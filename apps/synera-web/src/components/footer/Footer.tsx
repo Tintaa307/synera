@@ -8,7 +8,6 @@ import {
 } from "@remixicon/react"
 import { IconPhoneCall } from "@tabler/icons-react"
 
-// million-ignore
 const Footer = () => {
   const socialMedia = [
     {

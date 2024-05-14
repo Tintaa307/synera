@@ -15,7 +15,7 @@ const Card = ({ description, icon, title }: ServiceProps) => {
       <div className="w-full h-1/2 flex justify-center items-center">
         <span className="w-[75px] h-[75px] bg-primary rounded-full opacity-50"></span>
         <div className="w-[75px] h-[75px] bg-primary rounded-full opacity-95 absolute mt-3 flex justify-center items-center z-10">
-          <Image src={icon} alt={title} width={50} height={50} />
+          <Image src={icon} alt={title} width={50} height={50} loading="lazy" />
         </div>
         <span className="w-[75px] h-[75px] bg-primary rounded-full opacity-50"></span>
       </div>

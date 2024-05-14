@@ -64,7 +64,7 @@ const Navbar = () => {
             href={"#Home"}
             className="relative text-2xl font-bold text-transparent bg-clip-text bg-text-gradient select-none z-50"
           >
-            {/* <SyneraIcon /> */}
+            <SyneraIcon />
           </Link>
         </div>
         <div className="w-2/3 h-full flex justify-end items-center gap-2">
@@ -75,7 +75,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="relative hidden md:block z-50">
-          {/* <BarsIcon isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+          <BarsIcon isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </nav>
       <aside

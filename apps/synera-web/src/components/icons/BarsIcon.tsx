@@ -1,7 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
 
-// million-ignore
 const variants = {
   closed: {
     d: "M4 8l16 0 M4 16l16 0",

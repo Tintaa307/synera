@@ -3,7 +3,6 @@ import {
   RiGithubFill,
   RiLinkedinBoxFill,
 } from "@remixicon/react"
-import { useRouter } from "next/navigation"
 import React from "react"
 import { IconFileCv } from "@tabler/icons-react"
 import Link from "next/link"
@@ -13,7 +12,6 @@ type InformationProps = {
   index: number
 }
 
-// million-ignore
 const Information = ({ item, index }: InformationProps) => {
   return (
     <div key={index}>

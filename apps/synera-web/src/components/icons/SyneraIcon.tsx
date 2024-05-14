@@ -7,7 +7,7 @@ type IconProps = {
   width?: string
   height?: string
 }
-// million-ignore
+
 export const SyneraIcon = ({ className, width, height }: IconProps) => {
   return (
     <svg
@@ -114,6 +114,5 @@ export const SyneraIcon = ({ className, width, height }: IconProps) => {
         fill="white"
       />
     </svg>
-
   )
 }

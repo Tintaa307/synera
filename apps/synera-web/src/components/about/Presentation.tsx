@@ -40,6 +40,7 @@ const Presentation = ({
             alt={alt}
             width={260}
             height={389}
+            loading={"lazy"}
             className="xxl:w-[200px] xxl:h-[350px] xl:xxl:w-[180px] xl:xxl:h-[300px]"
           />
         </picture>

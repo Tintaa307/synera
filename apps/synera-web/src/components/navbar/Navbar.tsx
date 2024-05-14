@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from "react"
-import { motion } from "framer-motion"
 import Item from "./Item"
 import Link from "next/link"
 import { BarsIcon } from "../icons/BarsIcon"
@@ -14,7 +13,6 @@ import {
   RiTiktokFill,
 } from "@remixicon/react"
 
-// million-ignore
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const arrItems = [
@@ -66,7 +64,7 @@ const Navbar = () => {
             href={"#Home"}
             className="relative text-2xl font-bold text-transparent bg-clip-text bg-text-gradient select-none z-50"
           >
-            <SyneraIcon />
+            {/* <SyneraIcon /> */}
           </Link>
         </div>
         <div className="w-2/3 h-full flex justify-end items-center gap-2">
@@ -77,7 +75,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="relative hidden md:block z-50">
-          <BarsIcon isOpen={isOpen} setIsOpen={setIsOpen} />
+          {/* <BarsIcon isOpen={isOpen} setIsOpen={setIsOpen} /> */}
         </div>
       </nav>
       <aside
@@ -104,25 +102,15 @@ const Navbar = () => {
             ))}
           </ul>
           <section className="w-1/2 md:w-full h-full md:h-1/2 flex items-center justify-center flex-col gap-4 md:order-2">
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, type: "tween", delay: 0.8 }}
-              className="absolute bottom-24 flex flex-col"
-            >
+            <div className="absolute bottom-24 flex flex-col">
               <small className="text-white/60 text-sm font-normal">
                 Buenos Aires, Argentina.
               </small>
               <small className="text-white/60 text-sm font-normal">
                 Equipo Synera #develop.
               </small>
-            </motion.div>
-            <motion.ul
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, type: "tween", delay: 0.8 }}
-              className="absolute bottom-12 flex flex-row gap-5"
-            >
+            </div>
+            <ul className="absolute bottom-12 flex flex-row gap-5">
               {socialMedia.map((social, index) => (
                 <li key={index}>
                   <Link
@@ -158,7 +146,7 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-            </motion.ul>
+            </ul>
           </section>
         </div>
       </aside>

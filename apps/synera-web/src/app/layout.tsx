@@ -10,7 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 const workSans = Work_Sans({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Synera",
+  title: "Synera | Creciendo juntos logrando juntos.",
   description:
     "At Synera, we provide high-quality services for the creation or scaling of your projects. Additionally, we specialize in fostering strong client relationships.",
   keywords:

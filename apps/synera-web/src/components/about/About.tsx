@@ -91,7 +91,11 @@ const About = () => {
         />
 
         <div className="h-max w-[90%] 3xl:w-full sm:card:3xl:w-[90%] card:3xl:w-[95%] xs:sm:card:3xl:w-[80%]">
-          <Carousel>
+          <Carousel
+            opts={{
+              loop: true,
+            }}
+          >
             <CarouselContent className="flex flex-row">
               {aboutArr.map((item, index) => (
                 <Presentation

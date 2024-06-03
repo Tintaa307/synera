@@ -9,7 +9,7 @@ const Jobs = () => {
       description:
         "Sitio web de la Clínica Génesis: una página de aterrizaje simplificada para acceder a diferentes sucursales y profesionales.",
       image: "/images/Genesis.svg",
-      link: "https://www.consultoriogenesis.com/",
+      link: "https://consultoriogenesis.com/",
       items: ["Website", "UX/UI", "Frontend"],
     },
     {

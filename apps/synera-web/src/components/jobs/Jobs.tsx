@@ -13,11 +13,11 @@ const Jobs = () => {
       items: ["Website", "UX/UI", "Frontend"],
     },
     {
-      title: "Aplicación Web - Pillwise",
+      title: "Lo De Lucas",
       description:
-        "La aplicación oficial de PillWise, un recordatorio para personas mayores de tomar sus medicamentos y hacer un seguimiento de ellos.",
-      image: "/images/Pillwise.svg",
-      link: "",
+        "Página oficial del bodegón Lo De Lucas ubicado en Escobar, Buenos Aires. Diseño y desarrollo de la página web.",
+      image: "/images/lo-de-lucas.png",
+      link: "https://lodelucas.vercel.app",
       items: ["Web/App", "UX/UI", "Frontend"],
     },
     {

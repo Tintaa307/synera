@@ -45,6 +45,7 @@ const Card = ({
           <Image
             width={400}
             height={256.52}
+            quality={100}
             src={image}
             className={cn(
               "w-full h-full object-cover rounded-t-2xl border-t-[1px] border-[1px] border-white/20",

@@ -1,9 +1,10 @@
 "use client"
 
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Input from "./Input"
 import { toast, Toaster } from "sonner"
 import { handleSubmit } from "@/actions/contact-actions"
+import Loader from "../loader/Loader"
 
 const Contact = () => {
   const inputs = [
@@ -11,6 +12,35 @@ const Contact = () => {
     { type: "email", placeholder: "Correo electrónico...", name: "email" },
     { type: "tel", placeholder: "Teléfono...", name: "phone" },
   ]
+
+  const [isLoading, setIsLoading] = useState(false)
+
+  const formAction = async (formData: any) => {
+    try {
+      const res = await handleSubmit(formData)
+      switch (res.status) {
+        case 200:
+          setIsLoading(false)
+          toast.success(res.message)
+          break
+        case 500:
+          setIsLoading(false)
+          res.message.map((msg: string) => toast.error(msg)) as string[]
+          break
+        default:
+          setIsLoading(false)
+          toast.error("Error al enviar el mensaje")
+          break
+      }
+    } catch (error) {
+      console.log(error)
+      toast.error("Error al enviar el mensaje")
+    }
+  }
+
+  useEffect(() => {
+    console.log(isLoading)
+  }, [isLoading])
 
   return (
     <section
@@ -30,22 +60,7 @@ const Contact = () => {
               </p>
             </header>
             <form
-              action={async (formData) => {
-                const res = await handleSubmit(formData)
-                switch (res.status) {
-                  case 200:
-                    toast.success(res.message)
-                    break
-                  case 500:
-                    res.message.map((msg: string) =>
-                      toast.error(msg)
-                    ) as string[]
-                    break
-                  default:
-                    toast.info("Error al enviar el mensaje")
-                    break
-                }
-              }}
+              action={formAction}
               autoComplete="off"
               className="w-full xl:w-2/3 h-max flex sm:items-center items-center justify-center flex-col gap-8 xl:md:w-full"
             >
@@ -62,9 +77,10 @@ const Contact = () => {
               />
               <button
                 type="submit"
-                className="w-2/3 h-12 bg-[#070707] rounded-md text-white text-sm border-[1px] border-white/20 font-normal outline-none hover:border-white/60 transition-colors duration-200 mb-12 sm:w-full"
+                onClick={() => setIsLoading(true)}
+                className="w-2/3 h-12 flex items-center justify-center bg-[#070707] rounded-md text-white text-sm border-[1px] border-white/20 font-normal outline-none hover:border-white/60 transition-colors duration-200 mb-12 sm:w-full"
               >
-                Enviar mensaje
+                {isLoading ? <Loader /> : "Enviar"}
               </button>
             </form>
           </div>

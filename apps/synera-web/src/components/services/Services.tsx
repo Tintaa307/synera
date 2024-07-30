@@ -22,24 +22,6 @@ const Services = () => {
         "Impulsa tu presencia en línea con contenido social cautivador y anuncios estratégicos en plataformas, mejorando el reconocimiento de marca.",
       icon: "/icons/MarketingIcon.svg",
     },
-    {
-      title: "Marca Personal",
-      description:
-        "Desarrolla o mejora tu marca personal con un enfoque único, creando una identidad distintiva y memorable.",
-      icon: "/icons/BrandIcon.svg",
-    },
-    {
-      title: "Optimización SEO",
-      description:
-        "Maximiza la visibilidad en los motores de búsqueda. Nuestra optimización SEO hace que tu sitio sea más accesible, mejorando el posicionamiento y la relevancia.",
-      icon: "/icons/SEOIcon.svg",
-    },
-    {
-      title: "Embudos de Venta",
-      description:
-        "Diseña estrategias efectivas de embudo de ventas para aumentar el reconocimiento de marca y las conversiones. Impulsamos el crecimiento empresarial.",
-      icon: "/icons/SalesICON.svg",
-    },
   ]
 
   return (

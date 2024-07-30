@@ -12,6 +12,7 @@ import {
   RiLinkedinBoxFill,
   RiTiktokFill,
 } from "@remixicon/react"
+import Image from "next/image"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -62,9 +63,9 @@ const Navbar = () => {
           <Link
             onClick={() => setIsOpen(false)}
             href={"#Home"}
-            className="relative text-2xl font-bold text-transparent bg-clip-text bg-text-gradient select-none z-50"
+            className="w-[50px] h-[50px] relative text-2xl font-bold text-transparent bg-clip-text bg-text-gradient select-none z-50"
           >
-            <SyneraIcon />
+            <Image src={"/images/SYNERA_LOGO_WEB.png"} alt="Synera Team" width={150} height={150}></Image>
           </Link>
         </div>
         <div className="w-2/3 h-full flex justify-end items-center gap-2">

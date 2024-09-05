@@ -27,16 +27,10 @@ const Item = ({ title, url, className, action }: ItemProps) => {
           "text-white/80 text-lg font-medium cursor-pointer group-hover:text-primary transition-colors duration-150 flex items-center justify-center flex-col gap-4",
           {
             "text-primary":
-              (title === "Services" && scroll > 800 && scroll < 1900) ||
-              (title === "Servicios" && scroll > 800 && scroll < 1900) ||
-              (title === "Last Jobs" && scroll > 1900 && scroll < 2700) ||
-              (title === "Proyectos" && scroll > 1900 && scroll < 2700) ||
-              (title === "About us" && scroll > 2700 && scroll < 3700) ||
-              (title === "Nosotros" && scroll > 2700 && scroll < 3700) ||
-              (title === "Testimonials" && scroll > 3700 && scroll < 4500) ||
-              (title === "Testimonios" && scroll > 3700 && scroll < 4500) ||
-              (title === "Contact" && scroll > 3700) ||
-              (title === "Contacto" && scroll > 3700),
+              (title === "Servicios" && scroll > 800 && scroll < 1400) ||
+              (title === "Proyectos" && scroll > 1400 && scroll < 2300) ||
+              (title === "Nosotros" && scroll > 2700 && scroll < 3400) ||
+              (title === "Contacto" && scroll > 3400 && scroll < 4500)
           },
           className
         )}

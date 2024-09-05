@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const Landing = () => {
   return (
-    <main id="Home" className="w-full h-screen">
+    <main id="Home" className="w-full h-screen scroll-m-10">
       <Background
         bg_types="lines"
         animated

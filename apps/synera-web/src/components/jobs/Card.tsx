@@ -7,6 +7,7 @@ import {
   IconCode,
 } from "@tabler/icons-react"
 import Image from "next/image"
+import Link from "next/link"
 
 type JobsProps = {
   title: string
@@ -29,31 +30,24 @@ const Card = ({
   index,
 }: JobsProps) => {
   return (
-    <div
-      className={cn(
-        "w-[400px] xs:w-full h-max flex flex-col justify-center items-center bg-[#070707] rounded-2xl",
-        className
-      )}
-    >
+    <Link target="_blank" href={link} className={cn("w-[400px] xs:w-full h-max flex flex-col justify-center items-center bg-[#070707] rounded-2xl", className)}>
       <picture
         className={cn(
           "w-full h-[55%] flex justify-start items-start",
           className
         )}
       >
-        <a href={link} className={cn("w-full h-full", className)}>
-          <Image
-            width={400}
-            height={256.52}
-            quality={100}
-            src={image}
-            className={cn(
-              "w-full h-full object-cover rounded-t-2xl border-t-[1px] border-[1px] border-white/20",
-              className
-            )}
-            alt={title}
-          />
-        </a>
+        <Image
+          width={400}
+          height={256.52}
+          quality={100}
+          src={image}
+          className={cn(
+            "w-full h-full object-cover rounded-t-2xl border-t-[1px] border-[1px] border-white/20",
+            className
+          )}
+          alt={title}
+        />
       </picture>
       <article
         className={cn(
@@ -119,7 +113,7 @@ const Card = ({
           ))}
         </div>
       </article>
-    </div>
+    </Link >
   )
 }
 

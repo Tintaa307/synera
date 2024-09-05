@@ -27,9 +27,9 @@ const Services = () => {
   return (
     <section
       id="Services"
-      className="w-full min-h-screen flex justify-center items-center mt-24 xs:mt-0 flex-col"
+      className="w-full min-h-screen flex justify-center items-center mt-24 xs:mt-0 flex-col "
     >
-      <div className="absolute w-full h-full rounded-full xxl:bg-circle-gradient-xl bg-circle-gradient-xxl xxl:xs:bg-circle-gradient-small -z-10" />
+      <div className="absolute w-full h-[1000px] blur-3xl rounded-full xxl:bg-circle-gradient-xl bg-circle-gradient-xxl xxl:xs:bg-circle-gradient-small -z-5" />
       <Title
         title="Nuestros"
         highlight="servicios"

@@ -2,8 +2,8 @@
 
 import { ContactSchema } from "@/lib/validations/Schema"
 import axios from "axios"
+import { Dispatch, SetStateAction } from "react"
 import { z } from "zod"
-import { NextResponse } from "next/server"
 
 export const handleSubmit = async (formData: FormData) => {
   const name = formData.get("name")

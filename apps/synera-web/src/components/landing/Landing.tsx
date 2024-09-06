@@ -24,8 +24,7 @@ const Landing = () => {
             </h1>
             <p className="text-white/70 text-lg xs:text-sm xs:w-5/6 w-1/2 lg:w-3/4 md:lg:w-[95%] sm:text-base">
               En Synera, ofrecemos servicios de alta calidad para la creación o
-              escalado de tus proyectos. Además, nos especializamos en fomentar
-              relaciones sólidas con nuestros clientes.
+              escalado de tus proyectos. Acompañamos al cliente en cada paso, impulsando el éxito con resultados tangibles.
             </p>
             <Link
               href={"https://calendly.com/synera-app"}

@@ -56,7 +56,7 @@ const Contact = () => {
                 Hablemos un poco
               </h4>
               <p className="text-white/60 text-sm font-normal  text-center">
-                Deja una solicitud y te contactaremos para aclarar detalles.
+                Dejanos una solicitud y te contactaremos para aclarar detalles.
               </p>
             </header>
             <form

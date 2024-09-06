@@ -25,11 +25,11 @@ const Contact = () => {
           break
         case 500:
           setIsLoading(false)
-          res.message.map((msg: string) => toast.error(msg)) as string[]
+          res.message.map((msg: string) => toast.warning(msg)) as string[]
           break
         default:
           setIsLoading(false)
-          toast.error("Error al enviar el mensaje")
+          toast.warning("Error al enviar el mensaje")
           break
       }
     } catch (error) {

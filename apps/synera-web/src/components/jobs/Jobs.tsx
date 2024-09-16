@@ -17,7 +17,7 @@ const Jobs = () => {
       description:
         "Página oficial del bodegón Lo De Lucas ubicado en Escobar, Buenos Aires. Diseño y desarrollo de la página web.",
       image: "/images/lo-de-lucas.png",
-      link: "https://lodelucas.vercel.app",
+      link: "https://lodelucasbodegon.com",
       items: ["Web/App", "UX/UI", "Frontend"],
     },
     {

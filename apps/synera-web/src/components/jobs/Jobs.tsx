@@ -40,7 +40,7 @@ const Jobs = () => {
       description:
         "Plataforma web diseñada para descubrir servicios integrales de limpieza y fumigación, con un enfoque en calidad y confianza. .",
       image: "/images/cleaning.png",
-      link: "https://consultoriogenesis.com.ar/",
+      link: "https://solutionsas.com.ar/",
       items: ["Website", "UX/UI", "Frontend"],
     },
   ]

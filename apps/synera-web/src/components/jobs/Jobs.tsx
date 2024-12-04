@@ -38,7 +38,7 @@ const Jobs = () => {
     {
       title: "A&S Cleaning Solutions",
       description:
-        "Plataforma web diseñada para descubrir servicios integrales de limpieza y fumigación, con un enfoque en calidad y confianza. .",
+        "Plataforma web diseñada para descubrir servicios integrales de limpieza y fumigación, con un enfoque en calidad y confianza.",
       image: "/images/cleaning.png",
       link: "https://solutionsas.com.ar/",
       items: ["Website", "UX/UI", "Frontend"],

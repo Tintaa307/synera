@@ -43,6 +43,14 @@ const Jobs = () => {
       link: "https://solutionsas.com.ar/",
       items: ["Website", "UX/UI", "Frontend"],
     },
+    {
+      title: "Insufarma",
+      description:
+        "Tu espacio para descubrir productos farmacéuticos y de cuidado personal. Una cuenta diseñada para ofrecerte información.",
+      image: "/images/insufarma.jpg",
+      link: "https://synera.com.ar/",
+      items: ["UX/UI"],
+    }
   ]
 
   return (

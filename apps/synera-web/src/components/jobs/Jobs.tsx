@@ -46,7 +46,7 @@ const Jobs = () => {
     {
       title: "Insufarma",
       description:
-        "Tu espacio para descubrir productos farmacéuticos y de cuidado personal. Una cuenta diseñada para ofrecerte información.",
+        "Tu espacio para descubrir productos farmacéuticos y de cuidado personal. Una cuenta diseñada para ofrecerte información valiosa.",
       image: "/images/insufarma.jpg",
       link: "https://synera.com.ar/",
       items: ["UX/UI"],

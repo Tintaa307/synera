@@ -8,7 +8,7 @@ const Jobs = () => {
       title: "Clínica Génesis",
       description:
         "Sitio web de la Clínica Génesis: una página de aterrizaje simplificada para acceder a diferentes sucursales y profesionales.",
-      image: "/images/Genesis.svg",
+      image: "/images/Genesis.png",
       link: "https://consultoriogenesis.com.ar/",
       items: ["Website", "UX/UI", "Frontend"],
     },
@@ -17,17 +17,40 @@ const Jobs = () => {
       description:
         "Página oficial del bodegón Lo De Lucas ubicado en Escobar, Buenos Aires. Diseño y desarrollo de la página web.",
       image: "/images/lo-de-lucas.png",
-      link: "https://lodelucas.vercel.app",
-      items: ["Web/App", "UX/UI", "Frontend"],
-    },
-    {
-      title: "Portafolio web",
-      description:
-        "Portafolio personal de Valentín González, mostrando varios proyectos y tecnologías muy recientes y utilizadas para un desarrollo óptimo.",
-      image: "/images/TintaPortfolio.svg",
-      link: "https://valentin-portfolio.vercel.app/",
+      link: "https://lodelucasbodegon.com",
       items: ["Website", "UX/UI", "Frontend"],
     },
+    {
+      title: "Cejas Propiedades",
+      description:
+        "Una plataforma creada para facilitar la búsqueda de tu próximo inmueble. Descubre campos, chacras y propiedades urbanas. ",
+      image: "/images/cejas-propiedades.png",
+      link: "https://www.cejaspropiedades.com/",
+      items: ["Website", "UX/UI", "Frontend"],
+    },
+    {
+      title: "Actualmente",
+      description: "Página web diseñada para facilitar el acceso a cursos, certificaciones y recursos enfocados en el desarrollo de habilidades y el bienestar personal.",
+      image: "/images/actualmente.png",
+      link: "https://actualmente.com.ar/",
+      items: ["Website", "Frontend"],
+    },
+    {
+      title: "A&S Cleaning Solutions",
+      description:
+        "Plataforma web diseñada para descubrir servicios integrales de limpieza y fumigación, con un enfoque en calidad y confianza.",
+      image: "/images/cleaning.png",
+      link: "https://solutionsas.com.ar/",
+      items: ["Website", "UX/UI", "Frontend"],
+    },
+    {
+      title: "Insufarma",
+      description:
+        "Tu espacio para descubrir productos farmacéuticos y de cuidado personal. Una cuenta diseñada para ofrecerte información valiosa.",
+      image: "/images/insufarma.jpg",
+      link: "https://www.instagram.com/insufarmaok/",
+      items: ["UX/UI"],
+    }
   ]
 
   return (

@@ -69,7 +69,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="w-2/3 h-full flex justify-end items-center gap-2">
-          <ul className="w-full h-[60%] flex items-center justify-between flex-row md:hidden  rounded-3xl">
+          <ul className="w-full h-[60%] flex items-center justify-between flex-row md:hidden  rounded-3xl ">
             {arrItems.map((item, index) => (
               <Item key={index} title={item.title} url={item.link} />
             ))}

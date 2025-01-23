@@ -33,7 +33,7 @@ const About = () => {
           title: "Linkedin",
           url: "https://www.linkedin.com/in/mendiburubruno/",
         },
-        { title: "Behance", url: "" },
+        { title: "Behance", url: "https://www.behance.net/bruniskare" },
       ],
     },
     {

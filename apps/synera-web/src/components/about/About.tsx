@@ -62,19 +62,19 @@ const About = () => {
         { title: "Cv", url: "#" },
       ],
     },
-    {
-      name: "Facundo Lanzilotti",
-      image: "/images/facu-img-final-2.svg",
-      alt: "image-facundo",
-      role: "Marketing Digital",
-      social: [
-        {
-          title: "Linkedin",
-          url: "https://linkedin.com/in/facundo-lanzilotti/",
-        },
-        { title: "Cv", url: "/Facundo-Lanzilotti-CV.pdf" },
-      ],
-    },
+    // {
+    //   name: "Facundo Lanzilotti",
+    //   image: "/images/facu-img-final-2.svg",
+    //   alt: "image-facundo",
+    //   role: "Marketing Digital",
+    //   social: [
+    //     {
+    //       title: "Linkedin",
+    //       url: "https://linkedin.com/in/facundo-lanzilotti/",
+    //     },
+    //     { title: "Cv", url: "/Facundo-Lanzilotti-CV.pdf" },
+    //   ],
+    // },
   ]
 
   return (
